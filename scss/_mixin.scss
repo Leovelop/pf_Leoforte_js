@@ -44,6 +44,12 @@
     }
 }
 
+//section 기본값
+@mixin sectionPadding($pd : 140px) {
+  width: 100%;
+  padding: $pd 0px;
+}
+
 //More 버튼 인터랙션
 @mixin btnMore() {
     display: inline-block;

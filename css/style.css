@@ -1526,6 +1526,55 @@ label {
     width: 100%;
   }
 }
+#banner {
+  width: 100%;
+  padding: 200px 0px;
+  background: url(../img/banner.jpg) no-repeat center/cover fixed;
+}
+#banner .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+#banner .inner h1 {
+  font: bold 30px/1 "Source Sans Pro", "Noto Sans KR";
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+#banner .inner p {
+  font: 16px/1.3 "Josefin Sans", "Noto Sans KR";
+  color: #eee;
+  text-align: center;
+  text-shadow: 0px 0px 2px black;
+}
+
+/* tablet ------------------------- */
+@media screen and (max-width: 1179px) {
+  #banner {
+    width: 100%;
+    padding: 140px 20px;
+  }
+  #banner .inner {
+    width: 100%;
+  }
+  #banner .inner h1 {
+    font: bold 24px/1 "Source Sans Pro", "Noto Sans KR";
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  #banner .inner p {
+    font: 13px/1.3 "Josefin Sans", "Noto Sans KR";
+  }
+}
+/* mobile ------------------------- */
+@media screen and (max-width: 539px) {
+  #banner {
+    padding: 100px 20px;
+  }
+}
 #header_sub {
   width: 100%;
   position: absolute;
@@ -3833,56 +3882,6 @@ figure.pop .btnClose::after {
 }
 #skipNavi li a.on {
   top: 0px;
-}
-
-#banner {
-  width: 100%;
-  padding: 200px 0px;
-  background: url(../img/banner.jpg) no-repeat center/cover fixed;
-}
-#banner .inner {
-  width: 1180px;
-  margin: 0px auto;
-  position: relative;
-}
-#banner .inner h1 {
-  font: bold 30px/1 "Source Sans Pro", "Noto Sans KR";
-  margin-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-}
-#banner .inner p {
-  font: 16px/1.3 "Josefin Sans", "Noto Sans KR";
-  color: #eee;
-  text-align: center;
-  text-shadow: 0px 0px 2px black;
-}
-
-/* tablet ------------------------- */
-@media screen and (max-width: 1179px) {
-  #banner {
-    width: 100%;
-    padding: 140px 20px;
-  }
-  #banner .inner {
-    width: 100%;
-  }
-  #banner .inner h1 {
-    font: bold 24px/1 "Source Sans Pro", "Noto Sans KR";
-    margin-bottom: 10px;
-    color: #fff;
-    text-align: center;
-  }
-  #banner .inner p {
-    font: 13px/1.3 "Josefin Sans", "Noto Sans KR";
-  }
-}
-/* mobile ------------------------- */
-@media screen and (max-width: 539px) {
-  #banner {
-    padding: 100px 20px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
