@@ -1020,7 +1020,7 @@ label {
 }
 #services {
   width: 100%;
-  padding: 100px 0px;
+  padding: 140px 0px;
   background: #f4f4f4;
   position: relative;
 }
@@ -1394,7 +1394,7 @@ label {
 }
 #projects {
   width: 100%;
-  padding: 100px 0px;
+  padding: 140px 0px;
 }
 #projects .inner {
   width: 1180px;

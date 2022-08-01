@@ -1,6 +1,5 @@
 #services {
-  width: 100%;
-  padding: 100px 0px;
+  @include sectionPadding();
   background: #f4f4f4;
   position: relative;
 
