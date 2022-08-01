@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEOFORTE JOIN</title>
+  <script src="https://kit.fontawesome.com/854aa5d369.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./img/Leovelop(transparent).ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/sub_visual.js"></script>
+  <script defer src="./js/form_validation.js"></script>
+</head>
+
+<body>
+  <header id="header_sub">
+    <div class="inner">
+      <h1><a href="./index.html">LEOFORTE</a></h1>
+
+      <nav class="menuWeb">
+        <ul id="gnb">
+          <li><a href="./department.html">DEPARTMENT</a></li>
+          <li><a href="./youtube.html">YOUTUBE</a></li>
+          <li><a href="./community.html">COMMUNITY</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./location.html">LOCATION</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+
+          <div class="sns">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+      </a>
+
+      <nav class="menuMo">
+        <h1>
+          <a href="./index.html">LEOFORTE</a>
+          <span>UI/UX DEVELOPEMENT INSTITUTE</span>
+        </h1>
+
+        <ul id="gnbMo">
+          <li><a href="./department.html">DEPARTMENT</a></li>
+          <li><a href="./youtube.html">YOUTUBE</a></li>
+          <li><a href="./community.html">COMMUNITY</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./location.html">LOCATION</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content join">
+    <div class="sub_visual">
+      <div class="innerVisual">
+        <h2>
+          <div class="inner">
+            sub title
+          </div>
+        </h2>
+        <br>
+        <h1>
+          <div class="inner">
+            JOIN
+          </div>
+        </h1>
+      </div>
+    </div>
+    <div class="inner">
+      <form action="/" id="member" method="POST">
+        <fieldset>
+          <legend class="hidden">회원가입양식폼</legend>
+          
+          <article>
+            <ul class="memberStep">
+              <li>
+                <h3>
+                  <i class="far fa-check-circle"></i>
+                  <span>STEP1. 본인인증</span>
+                </h3>
+              </li>
+              <li class="active">
+                <h3>
+                  <i class="far fa-check-circle"></i>
+                  <span>STEP2. 약관 동의 / 회원정보 입력</span>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i class="far fa-check-circle"></i>
+                  <span>STEP3. 회원가입 완료</span>
+                </h3>
+              </li>
+            </ul>
+          </article>
+
+          <h2><label for="terms">Please read the following terms and conditions carefully</label></h2>
+          <h1>Terms & Policy</h1>
+          <article>            
+            <textarea name="terms"
+              id="terms" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sit aspernatur unde repudiandae voluptates architecto autem eveniet consectetur earum doloribus, doloremque minus, dolore ducimus laborum illum facere sequi placeat. Animi iusto dolore aliquam tenetur id suscipit nam repellendus, quasi deleniti! Ut eos recusandae eius aperiam consequuntur facilis numquam sunt unde alias aut quibusdam sit quam laboriosam mollitia exercitationem magnam dignissimos, ipsam illo? Vero aspernatur at adipisci labore blanditiis fugit, voluptatum itaque laborum. Earum repudiandae, beatae architecto blanditiis maiores optio molestiae voluptatum? Est, aliquid! Sunt rem voluptate, totam soluta cupiditate, illo nulla similique minus corporis excepturi aliquid. Dolorum hic facere esse!</textarea>
+            <div class="agreement">
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree">약관에 동의합니다.</label>
+            </div>
+          </article>
+
+          <h2>Please fill in the blank</h2>
+          <h1>MEMBER INFORMATION</h1>
+          <article>
+            <table>
+              <caption class="hidden">회원정보 입력 양식 테이블</caption>
+            
+              <tr>
+                <th scope="row"><label for="id">USER ID</label></th>
+                <td>
+                  <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." required>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                <td>
+                  <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해주세요." required>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                <td>
+                  <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 입력해주세요." required>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">HOBBY</th>
+                <td>
+                  <label for="game">
+                    <input type="checkbox" name="hobby" id="game" value="game">GAME
+                  </label>
+                  <label for="music">
+                    <input type="checkbox" name="hobby" id="music" value="music">MUSIC
+                  </label>
+                  <label for="reading">
+                    <input type="checkbox" name="hobby" id="reading" value="reading">READING
+                  </label>
+                  <p class="hobbyTxt">취미를 하나이상 선택해주세요.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>GENDER</th>
+                <td>
+                  <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">
+                    MALE
+                  </label>
+                  <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    FEMALE
+                  </label>
+                  <p class="genderTxt">성별을 선택해주세요.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><label for="email">E-MAil</label></th>
+                <td>
+                  <input type="text" name="mail" id="mail" placeholder="이메일주소를 입력해주세요.">
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><label for="edu">Education</label></th>
+                <td>
+                  <select name="edu" id="edu">
+                    <option value="" selected>최종학력을 선택해주세요</option>
+                    <option value="elementary school">초등학교 졸업</option>
+                    <option value="middel school">중학교 졸업</option>
+                    <option value="high school">고등학교 졸업</option>
+                    <option value="college">대학교 졸업</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><label for="comments">COMMENTS</label></th>
+                <td>
+                  <textarea name="comments" id="comments" placeholder="코멘트를 입력해주세요."></textarea>
+                </td>
+              </tr>
+              
+              <tr>
+                <th colspan="2">
+                  <input type="reset" value="CANCLE">
+                  <input type="submit" value="SUBMIT">
+                </th>
+              </tr>
+            </table>
+          </article>
+        </fieldset>
+      </form>
+      <p class="msgSuccess"></p>
+    </div>
+  </section>
+
+  <footer id="footer_sub">
+    <div class="inner">
+      <div>
+        <ul>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+        <address>
+          <span>Copyright 2022. Leovelop All rights reserved.</span>
+          <span><i class="fas fa-envelope"></i>bachroch@naver.com</span>
+          <span><i class="fas fa-mobile-alt"></i>010 - 2345 - 6789</span>
+        </address>
+      </div>
+      <ul class="footerMenu">
+        <li>
+          <h2>TITLE</h2>
+          <ul>
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Eveniet.</a></li>
+            <li><a href="#">Iusto!</a></li>
+            <li><a href="#">Aliquid.</a></li>
+            <li><a href="#">Alias.</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>TITLE</h2>
+          <ul>
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Eveniet.</a></li>
+            <li><a href="#">Iusto!</a></li>
+            <li><a href="#">Aliquid.</a></li>
+            <li><a href="#">Alias.</a></li>
+            <li><a href="#">Deserunt?</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>TITLE</h2>
+          <ul>
+            <li><a href="#">Iusto!</a></li>
+            <li><a href="#">Aliquid.</a></li>
+            <li><a href="#">Alias.</a></li>
+            <li><a href="#">Deserunt?</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>TITLE</h2>
+          <ul>
+            <li><a href="#">Lorem, ipsum.</a></li>
+            <li><a href="#">Exercitationem, quod.</a></li>
+            <li><a href="#">Hic, delectus!</a></li>
+            <li><a href="#">Mollitia, molestias!</a></li>
+            <li><a href="#">Eius, sint?</a></li>
+            <li><a href="#">Magni, porro.</a></li>
+            <li><a href="#">Cum, necessitatibus.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

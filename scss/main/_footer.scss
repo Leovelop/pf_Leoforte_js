@@ -1,0 +1,221 @@
+#footer {
+  width: 100%;
+  background: #212121;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 80px;
+    background: #2b2b2b;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .inner {
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+
+    >div {
+      width: 100%;
+      height: 80px;
+      background: #2b2b2b;
+      display: flex;
+      align-items: center;
+
+
+      @include floatRelease();
+
+      ul {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        @include floatRelease();
+
+        li {
+          float: left;
+          text-align: center;
+          margin-right: 15px;
+
+          a {
+            @include title($fontSize: 20px, $color: #ddd, $mB: 0);
+          }
+        }
+      }
+
+      address {
+        width: 70%;
+        @include floatRelease();
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0;
+
+        span {
+          display: block;
+          font: normal 14px/80px $fontDef;
+          color: #ddd;
+
+          i {
+            color: $themeColor;
+            margin-right: 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+
+    .footerMenu {
+      width: 100%;
+      padding: 30px 0px;
+      display: flex;
+      justify-content: center;
+
+      @include floatRelease();
+
+
+      >li {
+        width: calc(100% / 4);
+        position: relative;
+
+        h2 {
+          float: left;
+          padding-right: 5px;
+          transform: rotate(-90deg) translateX(-100%);
+          transform-origin: left top;
+          @include title($fontSize: 18px, $color: #555, $mB: 10px);
+          text-align: left;
+        }
+
+        ul {
+          float: left;
+
+          li {
+            width: 100%;
+
+            &:hover a {
+              color: $themeColor;
+            }
+
+            a {
+              display: block;
+              color: #ddd;
+              padding: 5px 0px;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+
+    @include floatRelease();
+  }
+}
+
+/* tablet ------------------------- */
+@media screen and (max-width: $tablet) {
+  #footer {
+    width: 100%;
+    padding: 0px 20px;
+
+    .inner {
+      width: 100%;
+
+      >div {
+        justify-content: center;
+
+        ul {
+          display: none;
+        }
+
+        address {
+          display: flex;
+          justify-content: center;
+
+          span {
+            margin-right: 20px;
+            font: normal 14px/1 $fontDef;
+            margin-bottom: 5px;
+
+            &:nth-of-type(1) {
+              //margin-top: 5px;  
+              padding-top: 5px;
+            }
+
+            i {
+              line-height: 1;
+            }
+          }
+        }
+      }
+
+      .footerMenu {
+        display: block;
+
+
+        >li {
+          width: calc(100% / 2);
+          float: left;
+
+          h2 {
+            width: 100%;
+            transform: rotate(0deg) translateX(0%);
+            text-align: center;
+          }
+
+          ul {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile ------------------------- */
+@media screen and (max-width: $mobile) {
+  #footer {
+    width: 100%;
+    padding: 0px 20px;
+
+    &::before {
+      height: 100px;
+    }
+
+    .inner {
+
+      >div {
+        height: 100px;
+
+        address {
+          width: 100%;
+
+          span {
+            margin-right: 20px;
+            font: normal 14px/1 $fontDef;
+
+            //margin-bottom: 0px;
+            &:nth-of-type(2) {
+              padding: 0px;
+            }
+          }
+        }
+      }
+
+      .footerMenu {
+
+        >li {
+          width: 100%;
+
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

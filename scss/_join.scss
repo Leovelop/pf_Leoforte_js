@@ -1,0 +1,324 @@
+.join {
+
+  .sub_visual {
+    &::before {
+      background-image: url(../img/join.jpg);
+    }
+  }
+
+  .inner {
+
+    h1 {
+      margin-bottom: 50px;
+    }
+
+    article {
+      margin-bottom: 100px;
+      background: #fff;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      ul {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          width: calc(100% / 3);
+          height: 60px;
+          border-top: 1px solid $defColor;
+          border-bottom: 1px solid $defColor;
+          text-align: center;
+
+          h3 {
+            font-size: 0;
+            color: $defColor;
+
+            i {
+              font-size: 16px;
+              margin-right: 5px;
+            }
+
+            span {
+              font: 16px/60px $fontKr;
+            }
+          }
+
+
+          &.active {
+            background: $themeColor;
+            position: relative;
+
+            h3 {
+              color: $subColor2;
+            }
+
+          }
+        }
+      }
+
+      #terms {
+        width: 100%;
+        height: 100px;
+        resize: none;
+        padding: 20px;
+        font: 12px/1.3 $fontDef;
+        color: $defColor;
+        background: $subColor2;
+        margin-bottom: 10px;
+        border: none;
+        outline-color: $themeColor;
+      }
+
+      .agreement {
+        margin-bottom: 150px;
+
+        label[for=agree] {
+          font-size: 12px;
+          color: $defColor;
+        }
+
+        p {
+          font: 12px/1 $fontKr;
+          color: $pointColor;
+          margin-top: 10px;
+        }
+      }
+
+      table {
+        width: 100%;
+        border-top: 3px solid $subColor1;
+        border-bottom: 3px solid $subColor1;
+
+        th {
+          width: 20%;
+          text-align: left;
+          font: bold 14px/1 $fontTitle;
+          padding: 20px 30px;
+          color: $defColor;
+          border: none;
+          border-bottom: 0.5px solid #eee;
+
+
+          label {
+            font-family: $fontTitle;
+          }
+
+          &:last-child {
+            background: #fff;
+            text-align: center;
+            border-right: none;
+            border-bottom: none;
+          }
+
+          input[type=submit],
+          input[type=reset] {
+            width: 150px;
+            height: 40px;
+            font: bold 14px/1 $fontTitle;
+            color: #fff;
+            margin: 0 10px;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+
+          input[type=submit] {
+            background: $defColor;
+            border: 1px solid $defColor;
+
+            &:hover {
+              background: #fff;
+              color: $defColor;
+            }
+          }
+
+          input[type=reset] {
+            background: $pointColor;
+            border: 1px solid $pointColor;
+
+            &:hover {
+              background: #fff;
+              color: $pointColor;
+            }
+          }
+        }
+
+        td {
+          border-bottom: 0.5px solid #eee;
+          padding: 20px 0px;
+
+          input[type=text],
+          input[type=password],
+          select {
+            width: 30%;
+            height: 30px;
+            background: $subColor2;
+            padding-left: 10px;
+            font-family: $fontKr;
+            color: $defColor;
+            border: none;
+            outline-color: $themeColor;
+
+
+            &::placeholder {
+              color: $subColor1;
+            }
+          }
+
+          select {
+            color: $subColor1;
+            option {
+              color: $subColor1;
+
+            }
+          }
+
+          input[type=checkbox],
+          input[type=radio] {
+            margin-right: 5px;
+          }
+
+          label {
+            margin-right: 30px;
+            color: $defColor;
+          }
+
+          textarea {
+            width: 80%;
+            height: 100px;
+            background: $subColor2;
+            resize: none;
+            padding: 20px;
+            border: none;
+            outline-color: $themeColor;
+
+            &::placeholder {
+              color: $subColor1;
+              font-size: 14px;
+            }
+          }
+
+          .hobbyTxt,
+          .genderTxt,
+          p {
+            font: 12px/1 $fontKr;
+            color: $pointColor;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* tablet -------------------- */
+@media screen and (max-width: $tablet) {
+  .join {
+    .inner {
+
+      article {
+
+        ul {
+  
+          li {
+            width: 100%;
+  
+  
+            &.active {
+  
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+
+        table {
+
+          th {
+            width: 10%;
+          }
+
+          td {
+            width: 90%;
+            padding-right: 30px;
+
+            input[type=text],
+            input[type=password],
+            select {
+              width: 100%;
+            }
+
+            textarea {
+              width: 100%;
+            }
+
+            .hobbyTxt,
+            .genderTxt {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile -------------------- */
+@media screen and (max-width: $mobile) {
+  .join {
+    .inner {
+
+      table {
+
+        th {
+          display: none;
+
+          &:last-child {
+            display: block;
+            width: 100%;
+          }
+
+          //인라인태그 버그, 부모태그에 font-size: 0
+          input[type=submit],
+          input[type=reset],
+          select {
+            width: 40%;
+            margin: 0 5%;
+          }
+        }
+
+        td {
+
+          input[type=text],
+          input[type=password] {
+            width: 100%;
+          }
+
+          select#company {
+            width: 100%;
+            margin-top: 10px;
+          }
+
+          label {
+            display: block;
+            margin-right: 0px;
+          }
+
+          textarea {
+            width: 90%;
+          }
+
+
+          .hobbyTxt,
+          .genderTxt {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

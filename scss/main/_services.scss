@@ -1,0 +1,291 @@
+#services {
+  width: 100%;
+  padding: 100px 0px;
+  background: #f4f4f4;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50%;
+    height: 600px;
+    background: $themeColor;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+  }
+
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      @include h2Title();
+    }
+
+    h1 {
+      @include h1Title();
+    }
+
+    .wrap {
+      width: 100%;
+
+      article {
+        &:nth-of-type(1) ul {
+          width: 100%;
+          margin-bottom: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+
+          li {
+            text-align: center;
+            width: calc(100% / 6);
+
+            &.on a {
+              color: $themeColor;
+            }
+
+            a {
+              display: inline-block;
+              font-size: 0;
+              color: #252A34;
+              transition: 0.3s;
+
+
+              &:hover {
+                color: $themeColor;
+
+                p {
+                  &::before {
+                    width: 100%;
+                  }
+                }
+              }
+
+              i {
+                font-size: 40px;
+              }
+
+              p {
+                margin-top: 20px;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  width: 0%;
+                  height: 2px;
+                  bottom: -5px;
+                  left: 0px;
+                  background: $themeColor;
+                  transition: 0.5s;
+                }
+
+                font: {
+                  weight: bold;
+                  size: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          width: 50%;
+          height: 600px;
+          float: right;
+          position: relative;
+          padding: 100px 30px;
+          color: #fff;
+
+          >h2 {
+            @include title($fontSize: 30px, $color: #fff, $mB: 20px);
+            text-align: left;
+          }
+
+          >p {
+            margin-bottom: 20px;
+            line-height: 1.3;
+          }
+
+          >a {
+            @include btnMore();
+          }
+        }
+      }
+
+      @include floatRelease();
+    }
+  }
+
+  .servicesImg {
+    position: absolute;
+    left: 0px;
+    bottom: 100px;
+    //background: url(../img/coperation.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 600px;
+
+    h2 {
+      @include title($fontSize: 100px, $color: $themeColor, $mB: 0);
+      position: absolute;
+      right: -1px;
+      top: 5vh;
+      letter-spacing: -5px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* tablet ------------------------- */
+@media screen and (max-width: $tablet) {
+  #services {
+    padding: 100px 20px;
+    position: relative;
+
+    &::before {
+
+      display: none;
+    }
+
+    .inner {
+      width: 100%;
+      z-index: 2;
+
+      h2 {
+        @include h2Title();
+      }
+
+      h1 {
+        @include h1Title();
+      }
+
+      .wrap {
+        width: 100%;
+
+        article {
+
+          &:nth-of-type(1) ul {
+            li {
+              width: calc(100% / 3);
+
+              a {
+
+                i {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+            width: 100%;
+            height: auto;
+            float: right;
+            position: relative;
+            padding: 60px 30px;
+            color: #fff;
+            background: $themeColor;
+
+            >h2 {
+              @include title($fontSize: 30px, $color: #fff, $mB: 20px);
+              text-align: left;
+            }
+
+            >p {
+              margin-bottom: 20px;
+              line-height: 1.3;
+            }
+
+            >a {
+              @include btnMore();
+            }
+          }
+        }
+
+        @include floatRelease();
+      }
+    }
+
+    .servicesImg {
+      position: relative;
+      left: 0px;
+      bottom: auto;
+      top: 0px;
+      width: 100%;
+      height: 400px;
+
+      h2 {
+        right: 30px;
+        top: 5vh;
+        font-size: 12vmax;
+      }
+    }
+  }
+}
+
+/* mobile ------------------------- */
+@media screen and (max-width: $mobile) {
+  #services {
+    padding: 100px 20px;
+    position: relative;
+
+    &::before {
+
+      display: none;
+    }
+
+    .inner {
+      width: 100%;
+      z-index: 2;
+
+      .wrap {
+
+        article {
+          &:nth-of-type(1) ul {
+            li {
+              width: calc(100% / 2);
+            }
+          }
+
+          &:nth-of-type(2) {
+
+            >h2 {
+              @include title($fontSize: 20px, $color: #fff, $mB: 20px);
+            }
+
+            >p {
+              margin-bottom: 20px;
+              line-height: 1.2;
+              font-size: 13px;
+
+              &:nth-of-type(2) {
+                display: none;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .servicesImg {
+      height: 350px;
+
+      h2 {
+        right: 30px;
+        top: 5vh;
+        font-size: 9vmax;
+      }
+    }
+  }
+}

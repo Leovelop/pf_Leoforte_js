@@ -1,0 +1,100 @@
+@mixin title($fontSize: 36px,
+    $color: #252A34,
+    $mB: 40px) {
+    font: bold #{$fontSize}/1 $fontTitle;
+    margin-bottom: $mB;
+    color: $color;
+    text-align: center;
+}
+
+@mixin subTitle() {
+    font: 18px/1 $fontDef;
+    color: #777;
+}
+
+//h2 디자인
+@mixin h2Title() {
+    @include subTitle();
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+//h1 디자인
+@mixin h1Title() {
+    @include title($mB: 80px);
+    position: relative;
+    z-index: 2;
+
+    &::first-letter { color: $pointColor; font-size: 50px;}
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80px;
+        height: 110px;
+        border: 3px solid $themeColor;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        z-index: -1;
+    }
+}
+
+//More 버튼 인터랙션
+@mixin btnMore() {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 13px 26px;
+    border: 1px solid $defColor;
+    color: $defColor;
+    font: bold 14px/1 $fontDef;
+    position: relative;
+    transition: 0.5s;
+
+    $btnNum: 16px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.5px;
+        height: $btnNum;
+        background: $defColor;
+        top: 50%;
+        right: -17.5px;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -35px;
+        width: 50px;
+        height: 0.5px;
+        background: $defColor;
+        transition: 0.5s;
+    }
+
+
+    &:hover {
+        background: $defColor;
+        color: #ddd;
+
+        &::before {
+            opacity: 1;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &::after {
+            width: $btnNum;
+            right: -25px;
+        }
+    }
+}

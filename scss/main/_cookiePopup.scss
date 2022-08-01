@@ -1,0 +1,192 @@
+#cookiePopup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+
+  $popWid: 700px;
+  $popHt: 500px;
+
+  .wrap {
+    width: $popWid;
+    height: $popHt;
+    background: $subColor2;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: - calc($popWid / 2);
+    margin-top: - calc($popHt / 2);
+    display: flex;
+    z-index: 1;
+
+    .pic {
+      width: 50%;
+
+      figure {
+        width: 100%;
+        height: 100%;
+        background: url(../img/cookiePop.jpg) no-repeat center/cover;
+        position: relative;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 60px;
+      right: 40px;
+
+
+      &:hover {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+
+      i {
+        font-size: 24px;
+        transition: 0.5s;
+        color: $defColor;
+      }
+    }
+
+    .content {
+      width: 50%;
+      color: $defColor;
+      padding: 60px 60px 60px 30px;
+
+      h1 {
+        font: bold 30px/1.1 $fontKr;
+        color: $subColor1;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font: 15px/1.4 $fontKr;
+        color: $defColor;
+      }
+    }
+
+    .check {
+      position: absolute;
+      right: 40px;
+      bottom: 60px;
+      display: inline-flex;
+      align-items: center;
+
+      label {
+        color: $pointColor;
+        font: 14px/1 $fontKr;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+/* tablet ------------------------- */
+@media screen and (max-width: $tablet) {
+  #cookiePopup {
+    padding: 5vw;
+
+    $popWid: 90vw;
+    $popHt: 500px;
+
+    .wrap {
+      width: $popWid;
+      height: $popHt;
+      margin-left: - calc($popWid / 2);
+      margin-top: - calc($popHt / 2);
+
+      .close {
+        top: auto;
+        bottom: 40px;
+        right: 40px;
+        font-size: 0;
+
+        i {
+          font-size: 20px;
+        }
+      }
+
+      .content {
+        color: $defColor;
+        padding: 40px;
+
+        h1 {
+          font: bold 24px/1.1 $fontKr;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font: 14px/1.3 $fontKr;
+        }
+      }
+
+      .check {
+        right: 90px;
+        bottom: 40px;
+      }
+    }
+  }
+}
+
+/* mobile ------------------------- */
+@media screen and (max-width: $mobile) {
+  #cookiePopup {
+
+    $popWid: 90vw;
+    $popHt: 400px;
+
+    .wrap {
+      width: $popWid;
+      height: $popHt;
+      margin-left: - calc($popWid / 2);
+      margin-top: - calc($popHt / 2);
+      flex-direction: column;
+
+      .pic {
+        width: 100%;
+        height: 100%;
+
+        figure {
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+
+      .content {
+        width: 100%;
+        position: absolute;
+
+        h1 {
+          color: $themeColor;
+        }
+
+        p {
+          color: $subColor2;
+          line-height: 1.4;
+        }
+      }
+
+      .check {
+        bottom: 30px;
+      }
+
+      .close {
+        bottom: 30px;
+
+        i {
+          color: $themeColor;
+        }
+      }
+    }
+  }
+}

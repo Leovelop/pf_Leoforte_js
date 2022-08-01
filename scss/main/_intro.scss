@@ -1,0 +1,119 @@
+#intro {
+  width: 100%;
+  padding: 80px 0px;
+
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    @include floatRelease();
+
+    h2 {
+      @include subTitle();
+    }
+
+    h1 {
+      @include title();
+      text-align: left;
+
+      &::first-letter {
+        color: $pointColor;
+        font-size: 50px;
+      }
+    }
+
+    .wrap {
+      width: 60%;
+      float: left;
+
+      p {
+        font: 16px/1.2 $fontDef;
+        color: #111;
+      }
+
+      a {
+        @include btnMore();
+      }
+    }
+
+    .request {
+      width: 40%;
+      float: left;
+      position: relative;
+      z-index: 1;
+
+      form {
+        position: absolute;
+        bottom: -179px;
+        left: 100px;
+        width: 300px;
+        background: #f4f4f4;
+
+        fieldset {
+          h2 {
+            @include title($fontSize: 17px, $color: #fff, $mB: 20px);
+            text-align: left;
+            padding-left: 20px;
+            line-height: 60px;
+            background: $themeColor;
+            height: 60px;
+
+            i {
+              margin-right: 20px;
+            }
+          }
+
+          text-align: center;
+
+          div {
+            padding: 20px;
+
+            input[type=text] {
+              border: none;
+              border-bottom: 1px solid #bbb;
+              background: transparent;
+              width: 100%;
+              padding: 10px 0px;
+              margin-bottom: 40px;
+            }
+          }
+
+          input[type=button] {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #252A34;
+            border: #252A34;
+            @include title($fontSize: 16px, $color: #fff, $mB: 40px);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* tablet ------------------------- */
+@media screen and (max-width: $tablet) {
+  #intro {
+    padding: 80px 20px;
+
+    .inner {
+      width: 100%;
+
+      .wrap {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .request {
+        width: 100%;
+        position: relative;
+
+        form {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

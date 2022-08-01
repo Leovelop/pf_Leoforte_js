@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "name": "Eric",
+      "position": "CEO",
+      "pic": "img/member1.jpg",
+      "quotes": "<br />Lorem ipsum,<br />dolor sit amet consectetur adipisicing elit.<br />Quibusdam <strong>at eum repellat,<br />facere</strong> culpa veritatis sapiente.<br />"
+    },
+    {
+      "name": "Anna",
+      "position": "Vice President",
+      "pic": "img/member2.jpg",
+      "quotes": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi unde blanditiis nostrum quo magnam facere ut eum recusandae voluptate officiis quibusdam odit nobis qui quis maiores, tempora, cumque saepe, ullam dolorum rem labore fugiat?"
+    },
+    {
+      "name": "John",
+      "position": "Developer",
+      "pic": "img/member3.jpg",
+      "quotes": " Corporis harum porro sint officiis praesentium quod sequi repudiandae quaerat non debitis, soluta odit aspernatur corrupti dolorum eveniet necessitatibus excepturi nihil obcaecati!"
+    },
+    {
+      "name": "Emily",
+      "position": "Designer",
+      "pic": "img/member4.jpg",
+      "quotes": "Veritatis doloremque, quam accusamus totam sit quas fugit debitis repellat assumenda ipsa blanditiis quae fuga illo praesentium esse, quo, consequuntur illum id temporibus."
+    },
+    {
+      "name": "Peter",
+      "position": "Developer",
+      "pic": "img/member5.jpg",
+      "quotes": "  Est cupiditate tempora ullam aperiam atque soluta modi quasi, dolore pariatur nesciunt, eaque sint odio in placeat sed earum voluptate accusamus incidunt repellendus a."
+    },
+    {
+      "name": "Charlotte",
+      "position": "Designer",
+      "pic": "img/member6.jpg",
+      "quotes": "Vero sequi nisi rem veritatis mollitia doloremque, deserunt id aliquam tempore et repellat quo minus! Vitae dolorem, ab consequuntur quas suscipit nulla consequatur sint vero modi delectus eos?"
+    },
+    {
+      "name": "Paul",
+      "position": "Planner",
+      "pic": "img/member7.jpg",
+      "quotes": "Autem ratione accusantium, voluptate modi dolore explicabo, voluptatem consectetur laudantium, quas odio eum exercitationem consequuntur."
+    }
+  ]
+}

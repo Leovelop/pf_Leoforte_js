@@ -1,0 +1,568 @@
+$ht: 50px;
+$gap: 20px;
+$web_wd: 200px;
+$tb_wd: 26%;
+$mo_wd: 32%;
+
+
+
+.department {
+	width: 100%;
+
+	.sub_visual {
+		&::before {
+			background-image: url(../img/department.jpg);
+		}
+	}
+
+	.ceoIntro {
+		background: $subColor2;
+		padding: 80px 0px;
+
+		.innerCeo {
+			width: 1180px;
+			margin: 0 auto;
+			position: relative;
+
+			.wrap {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+
+				article {
+					&:nth-of-type(1) {
+						width: 70%;
+						padding: 0px 50px;
+					}
+
+					&:nth-of-type(2) {
+						width: 30%;
+						height: 580px;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+
+					p {
+						font: bold 40px/1.3 $fontDef;
+						text-align: right;
+						margin: 20px 0px;
+
+						i {
+							color: $themeColor;
+						}
+
+						strong {
+							color: $pointColor;
+						}
+
+
+
+						&:last-child {
+							font-size: 20px;
+							margin: 0;
+						}
+					}
+
+					h3 {
+						margin-top: 100px;
+						text-align: right;
+						font: 20px/1 $fontDef;
+						color: $defColor;
+					}
+
+					h2 {
+						text-align: right;
+						font: bold 40px/1 $fontTitle;
+						color: $subColor1;
+					}					
+
+					
+				}
+			}
+		}
+	}
+
+	.inner {
+
+		article {
+			width: 100%;
+			@include floatRelease();
+			margin-bottom: 100px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:nth-of-type(2) {
+
+				h1,
+				h2 {
+					text-align: right;
+
+					&::before {
+						left: auto;
+						right: 20px;
+					}
+				}
+
+				.pic {
+					width: 40%;
+					height: 280px;
+					float: left;
+					overflow: hidden;
+					margin-bottom: 20px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				ul {
+					width: 60%;
+					float: left;
+
+					li {
+						width: calc(100% / 2);
+						float: left;
+						padding: 0px 20px 20px 20px;
+
+						h3 {
+							font: bold 18px/1 $fontTitle;
+							margin-bottom: 10px;
+						}
+
+						p {
+							font: 14px/1 $fontDef;
+							margin-bottom: 40px;
+						}
+					}
+				}
+			}
+
+			ul.depth_1 {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0px 180px;
+
+				li {
+					width: 100%;
+
+					span {
+						display: block;
+						text-align: center;
+						font: bold 14px/55px $defaultFont;
+						margin-bottom: $gap;
+						width: $web_wd;
+						height: $ht;
+						float: left;
+						position: relative;
+					}
+
+					span.depth_1_member {
+						background: $pointColor;
+						color: #fff;
+
+						&::before {
+							content: "";
+							width: 2px;
+							height: $gap;
+							display: block;
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							transform: translateX(-50%);
+							background: #ccc;
+						}
+					}
+
+					ul.depth_2 {
+						float: left;
+
+						>li {
+							width: $web_wd;
+							margin-right: 100px;
+							float: left;
+							min-height: 100%;
+							position: relative;
+
+							span.depth_2_member {
+								background: $themeColor;
+								color: #fff;
+
+								&::before {
+									content: "";
+									width: 2px;
+									height: $gap;
+									display: block;
+									position: absolute;
+									top: calc(100% + 1px);
+									left: calc(50% - 1px);
+									background: #ccc;
+								}
+
+								&::after {
+									content: "";
+									width: calc($web_wd / 2);
+									height: 2px;
+									display: block;
+									position: absolute;
+									background: #ccc;
+									left: calc(100% + 1px);
+									top: calc(50% - 1px);
+								}
+							}
+
+							&:last-child span.depth_2_member::after {
+								content: none;
+							}
+
+							&:last-child {
+								margin-right: 0px;
+							}
+
+							ul.depth_3 {
+								width: 100%;
+
+								li {
+									&:last-child {
+										span::before {
+											display: none;
+										}
+									}
+								}
+
+								>li span {
+									border: 1px solid #bbb;
+									color: $subColor1;
+									background: $subColor2;
+									border: 1px solid $themeColor;
+
+									&::before {
+										content: "";
+										width: 2px;
+										height: $gap;
+										display: block;
+										position: absolute;
+										top: calc(100% + 1px);
+										left: calc(50% - 1px);
+										background: #ccc;
+									}
+								}
+							}
+						}
+					}
+
+					&::after {
+						content: "";
+						display: block;
+						clear: both;
+					}
+				}
+			}
+
+			.member {
+				width: 100%;
+				@include floatRelease();
+
+				>article {
+					width: 580px;
+					float: left;
+					margin-right: 20px;
+
+					&:nth-of-type(even) {
+						margin-right: 0px;
+					}
+
+					.memberPic {
+						width: 30%;
+						float: left;
+
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+
+					>div {
+						width: 70%;
+						float: right;
+						padding: 20px;
+						
+
+						h3 {
+							font: 16px/1 $fontDef;
+							color: #026873;
+						}
+
+						h2 {
+							font: 30px/1 $fontTitle;
+							color: $subColor1;
+							text-align: left;
+							margin-bottom: 40px;
+						}
+
+						>p {
+							font: 14px/1.3 $fontDef;
+						}
+					}				
+				}
+			}
+		}
+
+	}
+}
+
+/* tablet */
+@media screen and (max-width: $tablet) {
+
+	.department {
+		width: 100%;
+
+		.ceoIntro {
+			padding: 40px 20px;
+	
+			.innerCeo {
+				width: 100%;
+	
+				.wrap {
+	
+					article {
+						&:nth-of-type(1) {
+							width: 50%;
+							padding: 40px 20px;
+						}
+	
+						&:nth-of-type(2) {
+							width: 50%;
+						}
+	
+						p {
+							font: bold 24px/1.3 $fontDef;
+							margin: 20px 0px;
+							text-align: center;
+						}
+	
+						h3 {
+							margin-top: 70px;
+							text-align: right;
+							font: 16px/1 $fontDef;
+							color: $defColor;
+							text-align: center;
+						}
+	
+						h2 {
+							font: bold 30px/1 $fontTitle;
+							text-align: center;
+						}					
+	
+						
+					}
+				}
+			}
+		}
+
+		>.inner {
+			width: 100%;
+			padding: 100px 20px;
+
+			article {
+
+				ul.depth_1 {
+					width: 100%;
+					padding: 0%;
+
+					li {
+						width: 100%;
+
+						span {
+							width: $tb_wd;
+						}
+
+						span.depth_1_member {
+							margin-right: 70%;
+						}
+
+						ul.depth_2 {
+							width: 100%;
+
+							>li {
+								width: $tb_wd;
+								margin-right: 11%;
+
+								span.depth_2_member {
+									width: 100%;
+
+									&::after {
+										width: 100%;
+									}
+								}
+
+								&:last-child {
+									margin-right: 0%;
+								}
+
+								ul.depth_3 {
+									>li span {
+										box-sizing: border-box;
+										width: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+	
+				&:nth-of-type(2) {
+		
+					.pic {
+						width: 100%;
+
+						img {
+							margin-bottom: 20px;
+						}
+					}
+	
+					ul {
+						width: 100%;
+
+						li {
+							padding: 0px;
+							padding-right: 20px;
+	
+							p {
+								margin-bottom: 30px;
+							}
+						}
+					}
+				}
+
+				.member {
+	
+					>article {
+						width: 49%;
+						margin-right: 2%;
+						margin-bottom: 40px;
+	
+						&:nth-of-type(even) {
+							margin-right: 0%;
+						}
+
+						>div {
+							width: 100%;
+							padding: 10px;
+		
+							h2 {
+								margin-bottom: 20px;
+							}
+	
+						}
+	
+						.memberPic {
+							width: 100%;
+							height: 480px;
+							margin-bottom: 10px;
+							padding: 0px;
+
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+										
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* mobile */
+@media screen and (max-width: $mobile) {
+
+	.department {
+
+		.ceoIntro {
+	
+			.innerCeo {
+	
+				.wrap {
+	
+					article {
+						&:nth-of-type(1), &:nth-of-type(2) {
+							width: 100%;
+						}					
+	
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.inner {
+			article {
+				ul.depth_1 {
+					li {
+						span {
+							width: $mo_wd;
+						}
+
+						span.depth_1_member {
+							margin-right: 2%;
+						}
+
+						ul.depth_2 {
+							>li {
+								width: $mo_wd;
+								margin-right: 2%;
+							}
+						}
+					}
+				}
+
+				&:nth-of-type(2) {
+
+					
+	
+					ul {
+
+						li {
+							width: 100%;
+							padding-right: 0px;
+	
+							p {
+								margin-bottom: 40px;
+							}
+						}
+					}
+				}
+
+				.member {
+	
+					>article {
+						width: 100%;
+						margin-right: 0%;
+						margin-bottom: 40px;
+
+						>div {
+							padding: 0px;	
+
+							h3, h2, p { text-align: center;}
+						}
+
+					}
+				}
+			}
+		}
+	}
+}

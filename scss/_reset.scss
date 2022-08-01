@@ -1,0 +1,58 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: $fontDef;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+table,
+td,
+th {
+	border-collapse: collapse;
+}
+
+fieldset {
+	border: none;
+}
+
+input,
+a,
+button {
+	outline: 1;
+}
+
+label {
+  vertical-align: middle;
+}
+
+.hidden {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+@mixin floatRelease {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin flexCenter($alignDefItems : center) {
+	display: flex;
+	justify-content: center;
+	align-items: $alignDefItems;
+}
