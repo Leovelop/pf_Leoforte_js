@@ -1,6 +1,5 @@
 #intro {
-  width: 100%;
-  padding: 80px 0px;
+  @include sectionPadding($pd: 100px);
 
   .inner {
     width: 1180px;
