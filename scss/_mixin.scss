@@ -1,3 +1,4 @@
+//메인 제목 디자인
 @mixin title($fontSize: 36px,
     $color: #252A34,
     $mB: 40px) {
@@ -7,6 +8,7 @@
     text-align: center;
 }
 
+//서브 제목 디자인
 @mixin subTitle() {
     font: 18px/1 $fontDef;
     color: #777;
