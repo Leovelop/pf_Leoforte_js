@@ -5,6 +5,18 @@
       "subway" : "",
       "bus" : "",
       "car" : ""
+    },
+    {
+      "name" : "Branch 1",
+      "subway" : "",
+      "bus" : "",
+      "car" : ""
+    },
+    {
+      "name" : "Branch 2",
+      "subway" : "",
+      "bus" : "",
+      "car" : ""
     }
   ]
 }
