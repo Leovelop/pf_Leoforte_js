@@ -17,8 +17,8 @@ $defColor : #252A34;
 $pointColor : #FF2E63;
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans+KR:wght@300;700&family=Source+Sans+Pro:wght@700&display=swap');
-@import "./reset.scss";
-@import "./mixin.scss";
+@import "./common/reset.scss";
+@import "./common/mixin.scss";
 
 @import "./main/cookiePopup.scss";
 @import "./main/header.scss";
