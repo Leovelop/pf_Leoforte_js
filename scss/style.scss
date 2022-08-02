@@ -29,14 +29,13 @@ $pointColor : #FF2E63;
 @import "./main/projects.scss";
 @import "./main/banner.scss";
 
-@import "./sub_layout.scss";
-@import "./department.scss";
-@import "./community.scss";
-@import "./gallery.scss";
-@import "./join.scss";
-@import "./location.scss";
-@import "./youtube.scss";
-
+@import "./sub/sub_layout.scss";
+@import "./sub/department.scss";
+@import "./sub/community.scss";
+@import "./sub/gallery.scss";
+@import "./sub/join.scss";
+@import "./sub/location.scss";
+@import "./sub/youtube.scss";
 
 
 #skipNavi li a {
