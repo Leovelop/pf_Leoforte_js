@@ -6,5 +6,11 @@ fetch("./data/transport.json")
     const transportInfo = json.data;
 
     //console.log(json.data);
+    let name = "";
+    let subway = "";
+    let bus = "";
+    let car = "";
+
+    
   }
 );
