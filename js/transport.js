@@ -11,6 +11,11 @@ fetch("./data/transport.json")
     let bus = "";
     let car = "";
 
-    
+    transportInfo.map(() => {
+      name = transportInfo[index].name;
+      subway = transportInfo[index].subway;
+      bus = transportInfo[index].bus;
+      car = transportInfo[index].car;
+    });
   }
 );
