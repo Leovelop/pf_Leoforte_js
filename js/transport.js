@@ -3,8 +3,8 @@ fetch("./data/transport.json")
     return item.json();
   })
   .then(json => {
-    const transportInfo = json.item;
+    const transportInfo = json.data;
 
-    console.log(transportInfo);
+    //console.log(json.data);
   }
 );
