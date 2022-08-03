@@ -14,6 +14,7 @@ btnCall.onclick = function (e) {
 window.onresize = function () {
   let wid = window.innerWidth;
   
+  //브라우저 너비 1180px 기준 이벤트
   if (wid >= 1180) {
     menuMo.classList.remove(className_on);
     btnCall.classList.remove(className_on);
