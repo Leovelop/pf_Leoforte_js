@@ -8,6 +8,11 @@
 
     h2 {
       @include subTitle();
+      text-align: center;
+    }
+    
+    h1 {
+      @include title();
     }
   }
 }

@@ -1587,6 +1587,13 @@ label {
 #brand .inner h2 {
   font: 18px/1 "Josefin Sans", "Noto Sans KR";
   color: #777;
+  text-align: center;
+}
+#brand .inner h1 {
+  font: bold 36px/1 "Source Sans Pro", "Noto Sans KR";
+  margin-bottom: 40px;
+  color: #252A34;
+  text-align: center;
 }
 
 #header_sub {
