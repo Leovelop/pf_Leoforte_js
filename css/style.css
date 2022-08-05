@@ -1584,6 +1584,10 @@ label {
   margin: 0 auto;
   position: relative;
 }
+#brand .inner h2 {
+  font: 18px/1 "Josefin Sans", "Noto Sans KR";
+  color: #777;
+}
 
 #header_sub {
   width: 100%;
