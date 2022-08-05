@@ -7,17 +7,15 @@
     position: relative;
 
     h2 {
-      @include subTitle();
-      text-align: center;
+      @include h2Title();
     }
     
     h1 {
-      @include title();
+      @include h1Title();
+    }
 
-      &::first-letter {
-        color: $pointColor;
-        font-size: 50px;
-      }
+    .wrap {
+      width: 100%;
     }
   }
 }
