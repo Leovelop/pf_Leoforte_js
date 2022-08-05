@@ -13,6 +13,11 @@
     
     h1 {
       @include title();
+
+      &::first-letter {
+        color: $pointColor;
+        font-size: 50px;
+      }
     }
   }
 }

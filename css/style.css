@@ -1595,6 +1595,10 @@ label {
   color: #252A34;
   text-align: center;
 }
+#brand .inner h1::first-letter {
+  color: #FF2E63;
+  font-size: 50px;
+}
 
 #header_sub {
   width: 100%;
