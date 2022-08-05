@@ -1,6 +1,6 @@
 #services {
   @include sectionPadding();
-  background: #efefef;
+  background: #f4f4f4;
   position: relative;
 
   &::before {
@@ -53,7 +53,6 @@
               color: #252A34;
               transition: 0.3s;
 
-
               &:hover {
                 color: $themeColor;
 
@@ -66,6 +65,13 @@
 
               i {
                 font-size: 40px;
+                background: #fff;
+                border-radius: 50%;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                
               }
 
               p {

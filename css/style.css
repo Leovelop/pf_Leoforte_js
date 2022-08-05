@@ -1070,7 +1070,7 @@ label {
 #services {
   width: 100%;
   padding: 140px 0px;
-  background: #efefef;
+  background: #f4f4f4;
   position: relative;
 }
 #services::before {
@@ -1151,6 +1151,12 @@ label {
 }
 #services .inner .wrap article:nth-of-type(1) ul li a i {
   font-size: 40px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
 }
 #services .inner .wrap article:nth-of-type(1) ul li a p {
   margin-top: 20px;
