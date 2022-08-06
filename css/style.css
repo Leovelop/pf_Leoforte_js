@@ -1624,6 +1624,9 @@ label {
 #brand .inner .wrap {
   width: 100%;
 }
+#brand .inner .wrap article {
+  width: 380px;
+}
 #brand .inner .wrap::after {
   content: "";
   display: block;
