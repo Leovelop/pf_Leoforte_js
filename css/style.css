@@ -1624,6 +1624,11 @@ label {
 #brand .inner .wrap {
   width: 100%;
 }
+#brand .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 #header_sub {
   width: 100%;

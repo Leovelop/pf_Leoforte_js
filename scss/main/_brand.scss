@@ -17,6 +17,7 @@
     .wrap {
       width: 100%;
       
+      @include floatRelease();
     }
   }
 }
