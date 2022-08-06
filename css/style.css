@@ -1625,7 +1625,15 @@ label {
 }
 #brand .inner .wrap article {
   width: 380px;
+  height: 300px;
+}
+#brand .inner .wrap article:nth-of-type(1) {
   height: 620px;
+}
+#brand .inner .wrap article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #brand .inner .wrap::after {
   content: "";
