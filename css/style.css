@@ -1588,7 +1588,6 @@ label {
 #brand .inner {
   width: 1180px;
   margin: 0 auto;
-  position: relative;
 }
 #brand .inner h2 {
   font: 18px/1 "Josefin Sans", "Noto Sans KR";
@@ -1626,6 +1625,7 @@ label {
 }
 #brand .inner .wrap article {
   width: 380px;
+  height: 620px;
 }
 #brand .inner .wrap::after {
   content: "";
