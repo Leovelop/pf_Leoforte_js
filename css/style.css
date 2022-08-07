@@ -1588,6 +1588,7 @@ label {
 #brand .inner {
   width: 1180px;
   margin: 0 auto;
+  position: relative;
 }
 #brand .inner h2 {
   font: 18px/1 "Josefin Sans", "Noto Sans KR";
