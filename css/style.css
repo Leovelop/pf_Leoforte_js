@@ -1641,6 +1641,9 @@ label {
 #brand .inner .wrap article:nth-of-type(odd) {
   margin-right: 0px;
 }
+#brand .inner .wrap article:nth-of-type(even) {
+  margin-left: 20px;
+}
 #brand .inner .wrap article:nth-of-type(1) {
   height: 620px;
 }
