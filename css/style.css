@@ -1629,6 +1629,17 @@ label {
   height: 300px;
   background: #efefef;
   float: left;
+  margin-right: 20px;
+  /*&:nth-of-type(3) {
+    margin-right: 0px;
+  }
+
+  &:nth-of-type(5) {
+    margin-right: 0px;
+  }*/
+}
+#brand .inner .wrap article:nth-of-type(odd) {
+  margin-right: 0px;
 }
 #brand .inner .wrap article:nth-of-type(1) {
   height: 620px;
