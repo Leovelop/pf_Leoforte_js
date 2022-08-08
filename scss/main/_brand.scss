@@ -29,6 +29,7 @@
           content: '';
           position: absolute;
           background: linear-gradient(45deg, rgba(65, 105, 225, 0.4), rgba(255, 105, 180, 0.4));
+          width: 100%;
         }
 
         &:nth-of-type(odd) {
