@@ -1633,7 +1633,7 @@ label {
   position: relative;
   cursor: pointer;
 }
-#brand .inner .wrap article:hover::after {
+#brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
   opacity: 1;
 }
 #brand .inner .wrap article::after {
