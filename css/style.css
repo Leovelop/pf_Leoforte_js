@@ -1658,6 +1658,9 @@ label {
   padding: 170px 50px 0px;
   text-align: center;
 }
+#brand .inner .wrap article:nth-of-type(1) a {
+  color: #03A6A6;
+}
 #brand .inner .wrap article:nth-of-type(n+1):nth-of-type(n+2) {
   margin-bottom: 20px;
 }
