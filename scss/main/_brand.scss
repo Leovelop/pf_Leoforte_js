@@ -24,6 +24,7 @@
         float: left;
         margin-right: 20px;
         position: relative;
+        cursor: pointer;
 
         &:hover {
           &::after { opacity: 1;}

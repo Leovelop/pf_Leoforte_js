@@ -1631,6 +1631,7 @@ label {
   float: left;
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 #brand .inner .wrap article:hover::after {
   opacity: 1;
