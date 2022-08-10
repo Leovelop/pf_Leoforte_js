@@ -70,8 +70,9 @@
           }
 
           a {
-            color: $subColor1;
-            border: 1px solid $subColor1;
+            //color: $subColor1;
+            //border: 1px solid $subColor1;
+            @include btnMore();
           }
         }
         

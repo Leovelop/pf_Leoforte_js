@@ -51,12 +51,12 @@
 }
 
 //More 버튼 인터랙션
-@mixin btnMore() {
+@mixin btnMore($borderColor : $defColor) {
     display: inline-block;
     margin-top: 40px;
     padding: 13px 26px;
-    border: 1px solid $defColor;
-    color: $defColor;
+    border: 1px solid $borderColor;
+    color: $borderColor;
     font: bold 14px/1 $fontDef;
     position: relative;
     transition: 0.5s;
