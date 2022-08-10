@@ -75,6 +75,10 @@
             @include btnMore($borderColor: $themeColor, $fontWt : normal);
             z-index: 1;
 
+            &::before {
+              background: $themeColor;
+            }
+
             &::after {
               background: $themeColor;
             }
