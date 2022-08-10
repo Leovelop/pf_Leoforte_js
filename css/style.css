@@ -1660,7 +1660,7 @@ label {
 }
 #brand .inner .wrap article:nth-of-type(1) p {
   color: #999;
-  font: 13px/1 "Josefin Sans", "Noto Sans KR";
+  font: 13px/1.4 "Josefin Sans", "Noto Sans KR";
   margin-bottom: 30px;
 }
 #brand .inner .wrap article:nth-of-type(1) a {
