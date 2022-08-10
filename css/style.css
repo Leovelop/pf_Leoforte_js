@@ -1658,6 +1658,11 @@ label {
   padding: 170px 50px 0px;
   text-align: center;
 }
+#brand .inner .wrap article:nth-of-type(1) p {
+  color: #999;
+  font: 13px/1 "Josefin Sans", "Noto Sans KR";
+  margin-bottom: 30px;
+}
 #brand .inner .wrap article:nth-of-type(1) a {
   color: #03A6A6;
   border: 1px solid #03A6A6;

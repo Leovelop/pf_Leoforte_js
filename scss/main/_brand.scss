@@ -57,6 +57,12 @@
           padding: 170px 50px 0px;
           text-align: center;
 
+          p {
+            color: #999;
+            font: 13px/1 $fontDef;
+            margin-bottom: 30px;
+          }
+
           a {
             color: $subColor1;
             border: 1px solid $subColor1;
