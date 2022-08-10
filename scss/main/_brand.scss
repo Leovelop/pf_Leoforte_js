@@ -70,18 +70,10 @@
           }
 
           a {
-            //color: $subColor1;
-            //border: 1px solid $subColor1;
-            @include btnMore($borderColor: $themeColor, $fontWt : normal);
+            @include btnMore($borderColor: $themeColor);
             z-index: 1;
 
-            &::before {
-              background: $themeColor;
-            }
-
-            &::after {
-              background: $themeColor;
-            }
+            &::before, &::after { background: $themeColor; }
           }
         }
         
