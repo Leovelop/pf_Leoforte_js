@@ -1677,8 +1677,8 @@ label {
   display: inline-block;
   margin-top: 40px;
   padding: 13px 26px;
-  border: 1px solid #08D9D6;
-  color: #08D9D6;
+  border: 1px solid #FF2E63;
+  color: #FF2E63;
   font: bold 14px/1 "Josefin Sans", "Noto Sans KR";
   position: relative;
   transition: 0.5s;
@@ -1722,11 +1722,11 @@ label {
   right: -25px;
 }
 #brand .inner .wrap article:nth-of-type(1) a::before, #brand .inner .wrap article:nth-of-type(1) a::after {
-  background: #08D9D6;
+  background: #FF2E63;
 }
 #brand .inner .wrap article:nth-of-type(1) a:hover {
   color: #252A34;
-  background: #08D9D6;
+  background: #FF2E63;
 }
 #brand .inner .wrap article:nth-of-type(n+1):nth-of-type(n+2) {
   margin-bottom: 20px;

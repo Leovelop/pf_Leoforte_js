@@ -76,14 +76,14 @@
           }
 
           a {
-            @include btnMore($borderColor: $themeColor);
+            @include btnMore($borderColor: $pointColor);
             z-index: 1;
 
-            &::before, &::after { background: $themeColor; }
+            &::before, &::after { background: $pointColor; }
 
             &:hover {
               color: $defColor;
-              background: $themeColor;
+              background: $pointColor;
             }
           }
         }
