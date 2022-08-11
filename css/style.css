@@ -1658,6 +1658,9 @@ label {
   padding: 170px 50px 0px;
   text-align: center;
 }
+#brand .inner .wrap article:nth-of-type(1) i {
+  color: #fff;
+}
 #brand .inner .wrap article:nth-of-type(1) h2 {
   font: bold 22px/1 "Josefin Sans", "Noto Sans KR";
   margin-bottom: 10px;
