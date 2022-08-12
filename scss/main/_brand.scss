@@ -9,7 +9,7 @@
     h2 {
       @include h2Title();
     }
-    
+
     h1 {
       @include h1Title();
     }
@@ -28,7 +28,9 @@
 
         &:hover {
           &:not(&:first-of-type) {
-            &::after { opacity: 1;}
+            &::after {
+              opacity: 1;
+            }
           }
         }
 
@@ -39,8 +41,8 @@
           width: 100%;
           height: 100%;
           transition: 0.5s;
-          opacity: 0;
-          top: 0;
+          opacity: 1;
+          top: 0%;
           left: 0;
         }
 
@@ -79,7 +81,10 @@
             @include btnMore($borderColor: $pointColor);
             z-index: 1;
 
-            &::before, &::after { background: $pointColor; }
+            &::before,
+            &::after {
+              background: $pointColor;
+            }
 
             &:hover {
               color: $defColor;
@@ -87,7 +92,7 @@
             }
           }
         }
-        
+
         &:nth-of-type(n+1):nth-of-type(n+2) {
           margin-bottom: 20px;
         }
@@ -98,18 +103,14 @@
           object-fit: cover;
         }
       }
-      
+
       @include floatRelease();
     }
   }
 }
 
 /* tablet ------------------------- */
-@media screen and (max-width: $tablet) {
-
-}
+@media screen and (max-width: $tablet) {}
 
 /* mobile ------------------------- */
-@media screen and (max-width: $mobile) {
-  
-}
+@media screen and (max-width: $mobile) {}
