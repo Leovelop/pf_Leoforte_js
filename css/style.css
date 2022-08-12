@@ -1635,18 +1635,16 @@ label {
 }
 #brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
   opacity: 1;
-  top: 0%;
-  height: 100%;
 }
 #brand .inner .wrap article::after {
   content: "";
   position: absolute;
   background: linear-gradient(45deg, rgba(8, 217, 214, 0.6), rgba(255, 46, 98, 0.6));
   width: 100%;
-  height: 0%;
+  height: 100%;
   transition: 0.5s;
-  opacity: 1;
-  top: 100%;
+  opacity: 0;
+  top: 0;
   left: 0;
 }
 #brand .inner .wrap article:nth-of-type(odd) {
