@@ -1636,6 +1636,7 @@ label {
 #brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
   opacity: 1;
   top: 0%;
+  height: 100%;
 }
 #brand .inner .wrap article::after {
   content: "";
