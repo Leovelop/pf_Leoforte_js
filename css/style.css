@@ -1632,6 +1632,7 @@ label {
   margin-right: 20px;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 #brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
   opacity: 1;
