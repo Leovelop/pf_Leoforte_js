@@ -1644,7 +1644,7 @@ label {
   height: 100%;
   transition: 0.5s;
   opacity: 1;
-  top: 0%;
+  top: 100%;
   left: 0;
 }
 #brand .inner .wrap article:nth-of-type(odd) {
