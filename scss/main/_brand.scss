@@ -105,10 +105,11 @@
         &:not(&:first-of-type) {
           p {
             position: absolute;
-            bottom: 0px;
+            bottom: -100%;
             left: 0px;
             padding: 30px;
-            color: #fff;
+            //color: #fff;
+            color: salmon;
             z-index: 1;
             transition: 0.5s;
           }
