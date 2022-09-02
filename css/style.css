@@ -1740,6 +1740,8 @@ label {
   bottom: 0px;
   left: 0px;
   padding: 30px;
+  color: #fff;
+  z-index: 1;
 }
 #brand .inner .wrap article img {
   width: 100%;
