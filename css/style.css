@@ -1742,6 +1742,7 @@ label {
   padding: 30px;
   color: #fff;
   z-index: 1;
+  transition: 0.5s;
 }
 #brand .inner .wrap article img {
   width: 100%;
