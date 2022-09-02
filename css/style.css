@@ -1638,7 +1638,7 @@ label {
   opacity: 1;
 }
 #brand .inner .wrap article:hover img {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 #brand .inner .wrap article::after {
   content: "";
