@@ -1735,6 +1735,9 @@ label {
 #brand .inner .wrap article:nth-of-type(n+1):nth-of-type(n+2) {
   margin-bottom: 20px;
 }
+#brand .inner .wrap article:not(#brand .inner .wrap article:first-of-type) p {
+  position: absolute;
+}
 #brand .inner .wrap article img {
   width: 100%;
   height: 100%;
