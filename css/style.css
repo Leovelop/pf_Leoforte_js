@@ -2891,7 +2891,7 @@ label {
   transition: 0.4s;
   cursor: pointer;
   position: relative;
-  font: 15px/1.3 "Josefin Sans", "Noto Sans KR";
+  font: 15px/1.3 "Noto Sans KR";
   color: #252A34;
 }
 .community .inner article .faq dt.on {
