@@ -109,6 +109,9 @@ label {
   display: inline-flex;
   align-items: center;
 }
+#cookiePopup .wrap .check input[type=checkbox] {
+  cursor: pointer;
+}
 #cookiePopup .wrap .check label {
   color: #FF2E63;
   font: 14px/1 "Noto Sans KR";
