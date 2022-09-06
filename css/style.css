@@ -1664,6 +1664,7 @@ label {
   height: 620px;
   padding: 170px 50px 0px;
   text-align: center;
+  cursor: auto;
 }
 #brand .inner .wrap article:nth-of-type(1) i {
   color: #08D9D6;
