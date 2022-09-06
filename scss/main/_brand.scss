@@ -33,12 +33,6 @@
               opacity: 1;
             }
           }
-
-          img {
-            &::after {
-
-            }
-          }
         }
 
         &::after {
@@ -51,6 +45,7 @@
           opacity: 0;
           top: 0;
           left: 0;
+          filter: blur(1);
         }
 
         &:nth-of-type(odd) {
@@ -128,13 +123,6 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: 0.5s;
-          position: relative;
-
-          &::after {
-            content: '';
-            
-          }
         }
       }
 
