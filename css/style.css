@@ -1650,7 +1650,9 @@ label {
   opacity: 0;
   top: 0;
   left: 0;
-  filter: blur(1);
+}
+#brand .inner .wrap article::before {
+  content: "";
 }
 #brand .inner .wrap article:nth-of-type(odd) {
   margin-right: 0px;
