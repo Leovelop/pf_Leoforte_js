@@ -35,7 +35,7 @@
           }
 
           img {
-            transform: scale(1.1);
+            filter: blur(50);
           }
         }
 
@@ -127,6 +127,7 @@
           height: 100%;
           object-fit: cover;
           transition: 0.5s;
+          position: relative;
         }
       }
 

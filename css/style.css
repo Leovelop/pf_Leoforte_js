@@ -1641,7 +1641,7 @@ label {
   opacity: 1;
 }
 #brand .inner .wrap article:hover img {
-  transform: scale(1.1);
+  filter: blur(50);
 }
 #brand .inner .wrap article::after {
   content: "";
@@ -1759,6 +1759,7 @@ label {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  position: relative;
 }
 #brand .inner .wrap::after {
   content: "";
