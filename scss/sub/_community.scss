@@ -149,7 +149,6 @@
             padding: 20px 15px;
             border-bottom: 1px solid #eee;
             text-align: center;
-            font-family: $fontKr;
             font: 14px/1.4 $fontKr;
 
             &:nth-of-type(2) {
@@ -181,7 +180,6 @@
           color: $defColor;
 
           &.on {
-
             background: $defColor;
             color: $subColor2;
 
@@ -236,9 +234,10 @@
           padding: 25px 60px;
           position: relative;
           background: #eee;
-          font: 15px/1.3 $fontDef;
+          font: 15px/1.3 $fontKr;
           color: $defColor;
-
+          transition: 1s;
+          height: 0%;
           display: none;
 
           &.on {
