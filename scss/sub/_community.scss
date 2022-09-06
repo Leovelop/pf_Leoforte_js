@@ -234,11 +234,14 @@
           padding: 25px 60px;
           position: relative;
           background: #eee;
-          font: 15px/1.3 $fontKr;
           color: $defColor;
           transition: 1s;
           height: 0%;
           display: none;
+
+          ul li {
+            font: 15px/1.3 $fontKr;
+          }
 
           &.on {
             display: block;
