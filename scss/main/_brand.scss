@@ -49,6 +49,7 @@
 
         &::before {
           content: '';
+          position: absolute;
         }
 
         &:nth-of-type(odd) {

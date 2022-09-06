@@ -1653,6 +1653,7 @@ label {
 }
 #brand .inner .wrap article::before {
   content: "";
+  position: absolute;
 }
 #brand .inner .wrap article:nth-of-type(odd) {
   margin-right: 0px;
