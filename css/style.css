@@ -1640,9 +1640,6 @@ label {
 #brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
   opacity: 1;
 }
-#brand .inner .wrap article:hover img {
-  filter: blur(50);
-}
 #brand .inner .wrap article::after {
   content: "";
   position: absolute;
@@ -1760,6 +1757,9 @@ label {
   object-fit: cover;
   transition: 0.5s;
   position: relative;
+}
+#brand .inner .wrap article img::after {
+  content: "";
 }
 #brand .inner .wrap::after {
   content: "";
