@@ -166,16 +166,7 @@
       width: 100%;
       z-index: 2;
 
-      h2 {
-        @include h2Title();
-      }
-
-      h1 {
-        @include h1Title();
-      }
-
       .wrap {
-        width: 100%;
 
         article {
 
