@@ -138,9 +138,11 @@
 /* tablet ------------------------- */
 @media screen and (max-width: $tablet) {
   #brand {
+    padding: 100px 20px;
   
     .inner {
       width: 100%;
+      padding: 0px 20px;
       
       h2 {
         @include h2Title();

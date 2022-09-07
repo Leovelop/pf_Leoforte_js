@@ -1768,8 +1768,12 @@ label {
 
 /* tablet ------------------------- */
 @media screen and (max-width: 1179px) {
+  #brand {
+    padding: 100px 20px;
+  }
   #brand .inner {
     width: 100%;
+    padding: 0px 20px;
   }
   #brand .inner h2 {
     font: 18px/1 "Josefin Sans", "Noto Sans KR";
