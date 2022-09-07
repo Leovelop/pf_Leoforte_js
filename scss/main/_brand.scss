@@ -137,7 +137,139 @@
 
 /* tablet ------------------------- */
 @media screen and (max-width: $tablet) {
-
+  #brand {
+  
+    .inner {
+      width: 100%;
+      
+      h2 {
+        @include h2Title();
+      }
+  
+      h1 {
+        @include h1Title();
+      }
+  
+      .wrap {
+        width: 100%;
+  
+        article {
+          width: 380px;
+          height: 300px;
+          background: $defColor;
+          float: left;
+          margin-right: 20px;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+  
+          &:hover {
+            &:not(&:first-of-type) {
+              &::after {
+                opacity: 1;
+              }
+            }
+          }
+  
+          &::after {
+            content: '';
+            position: absolute;
+            background: rgba(0, 0, 0, .4);
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            opacity: 0;
+            top: 0;
+            left: 0;
+          }
+  
+          &::before {
+            content: '';
+            position: absolute;
+          }
+  
+          &:nth-of-type(odd) {
+            margin-right: 0px;
+          }
+  
+          &:nth-of-type(even) {
+            margin-left: 20px;
+          }
+  
+          &:nth-of-type(1) {
+            height: 620px;
+            padding: 170px 50px 0px;
+            text-align: center;
+            cursor: auto;
+  
+            i {
+              color: $themeColor;
+              font-size: 50px;
+              margin-bottom: 10px;
+            }
+  
+            h2 {
+              font: bold 22px/1 $fontDef;
+              margin-bottom: 10px;
+              color: $subColor2;
+            }
+  
+            p {
+              color: #999;
+              font: 13px/1.3 $fontDef;
+              margin-bottom: 30px;
+            }
+  
+            a {
+              @include btnMore($borderColor: $pointColor);
+              z-index: 1;
+  
+              &::before,
+              &::after {
+                background: $pointColor;
+              }
+  
+              &:hover {
+                color: $defColor;
+                background: $pointColor;
+              }
+            }
+          }
+  
+          &:nth-of-type(n+1):nth-of-type(n+2) {
+            margin-bottom: 20px;
+          }
+  
+          &:not(&:first-of-type) {
+            p {
+              position: absolute;
+              bottom: 0%;
+              left: 0px;
+              padding: 30px;
+              color: #fff;
+              z-index: 1;
+              transition: 0.5s;
+              opacity: 0;
+              transform: translateY(50%);
+            }
+  
+            &:hover p {
+              opacity: 1;
+              transform: translateY(0%);
+            }
+          }
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+  
+        @include floatRelease();
+      }
+    }
+  }
 }
 
 /* mobile ------------------------- */
