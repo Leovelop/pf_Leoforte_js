@@ -1778,15 +1778,7 @@ label {
   #brand .inner .wrap article {
     width: 380px;
     height: 300px;
-    background: #252A34;
-    float: left;
-    margin-right: 20px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  #brand .inner .wrap article:hover:not(#brand .inner .wrap article:hover:first-of-type)::after {
-    opacity: 1;
+    margin-right: 0px;
   }
   #brand .inner .wrap article::after {
     content: "";

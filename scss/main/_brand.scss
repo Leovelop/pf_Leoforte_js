@@ -158,20 +158,7 @@
         article {
           width: 380px;
           height: 300px;
-          background: $defColor;
-          float: left;
-          margin-right: 20px;
-          position: relative;
-          cursor: pointer;
-          overflow: hidden;
-  
-          &:hover {
-            &:not(&:first-of-type) {
-              &::after {
-                opacity: 1;
-              }
-            }
-          }
+          margin-right: 0px;
   
           &::after {
             content: '';
