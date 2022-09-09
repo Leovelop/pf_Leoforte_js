@@ -137,9 +137,9 @@
   
     .inner {
       width: 100%;
-      padding: 0px 20px;
   
       .wrap {
+        width: 100%;
   
         article {
           width: 49%;
@@ -173,41 +173,5 @@
 
 /* mobile ------------------------- */
 @media screen and (max-width: $mobile) {
-  #brand {
-    padding: 100px 20px;
   
-    .inner {
-      width: 100%;
-      padding: 0px 20px;
-  
-      .wrap {
-  
-        article {
-          width: 49%;
-          height: 300px;
-          margin-right: 0%;
-
-          &:nth-of-type(even) {
-            margin-left: 0%;
-            margin-right: 2%;
-          }
-  
-          &:nth-of-type(1) {
-            width: 100%;
-            height: 300px;
-            padding: 50px;
-            margin-bottom: 20px;
-
-            a {
-              margin-top: 0px;
-            }
-          }
-
-          &:nth-of-type(4) {
-            margin-right: 2%;
-          }
-        }
-      }
-    }
-  }
 }
