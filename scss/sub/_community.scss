@@ -8,6 +8,7 @@
 
   .inner {
 
+
     .tabButton {
       width: 100%;
       display: flex;
@@ -19,11 +20,13 @@
         width: calc(100% / 2);
         height: 60px;
 
-        &.on a {
-          background: #fff;
-          color: $pointColor;
-          border-top: 3px solid $defColor;
-          border-bottom: none;
+        &.on {
+          a {
+            background: #fff;
+            color: $pointColor;
+            border-top: 3px solid $defColor;
+            border-bottom: none;
+          }
         }
 
         &:last-child a {
