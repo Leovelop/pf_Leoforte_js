@@ -1736,9 +1736,6 @@ label {
   #brand .inner {
     width: 100%;
   }
-  #brand .inner .wrap {
-    width: 100%;
-  }
   #brand .inner .wrap article {
     width: 49%;
     height: 300px;
@@ -1762,6 +1759,18 @@ label {
   }
 }
 /* mobile ------------------------- */
+@media screen and (max-width: 539px) {
+  #brand .inner .wrap article {
+    width: 100%;
+    margin-right: 0%;
+  }
+  #brand .inner .wrap article:nth-of-type(even) {
+    margin-right: 0%;
+  }
+  #brand .inner .wrap article:nth-of-type(4) {
+    margin-right: 0%;
+  }
+}
 #header_sub {
   width: 100%;
   position: absolute;
