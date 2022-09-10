@@ -2841,6 +2841,7 @@ label {
 }
 .community .inner article.on {
   display: block;
+  transform: translateY(0px);
 }
 .community .inner article table {
   width: 100%;
