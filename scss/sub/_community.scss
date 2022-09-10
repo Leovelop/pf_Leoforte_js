@@ -110,7 +110,7 @@
 
     article {
       display: none;
-      transform: translateY(100px);
+      transition: 1s;
 
       &.on {
         display: block;
@@ -188,7 +188,10 @@
             color: $subColor2;
 
             span {
-              &:nth-of-type(1) { background: $themeColor; }
+              &:nth-of-type(1) {
+                background: $themeColor;
+              }
+
               &:nth-of-type(2) {
                 transform: rotate(180deg);
                 color: $pointColor;
@@ -201,8 +204,13 @@
             color: $subColor2;
 
             span {
-              &:nth-of-type(1) { background: $themeColor; }
-              &:nth-of-type(2) { color: $pointColor; }
+              &:nth-of-type(1) {
+                background: $themeColor;
+              }
+
+              &:nth-of-type(2) {
+                color: $pointColor;
+              }
             }
           }
 
@@ -348,7 +356,7 @@
 /* tablet -------------------- */
 @media screen and (max-width: $tablet) {
   .community {
-    .inner {  
+    .inner {
 
       article {
         table {
@@ -357,18 +365,18 @@
               &:nth-of-type(1) {
                 width: 15%;
               }
-  
+
               &:nth-of-type(3) {
                 width: 20%;
               }
-  
+
               &:nth-of-type(4) {
                 width: 0%;
                 display: none;
               }
-  
+
             }
-  
+
             td {
               &:nth-of-type(4) {
                 width: 0%;
@@ -376,7 +384,7 @@
               }
             }
           }
-        }        
+        }
       }
 
       .pagenation {
@@ -405,20 +413,20 @@
           tr {
             th {
               font-size: 13px;
-  
+
               &:nth-of-type(1) {
                 width: 0%;
                 display: none;
               }
-  
+
               &:nth-of-type(3) {
                 width: 30%;
               }
             }
-  
+
             td {
               font-size: 13px;
-  
+
               &:nth-of-type(1) {
                 width: 0%;
                 display: none;
@@ -428,13 +436,13 @@
         }
 
         .faq {
-  
+
           dt {
             padding: 25px 50px;
-  
+
             span {
               left: 10px;
-  
+
               &:nth-of-type(2) {
                 right: 10px;
               }
