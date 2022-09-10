@@ -110,6 +110,7 @@
 
     article {
       display: none;
+      transform: translateY(100px);
 
       &.on {
         display: block;

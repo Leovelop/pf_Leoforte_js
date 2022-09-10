@@ -2836,6 +2836,7 @@ label {
 }
 .community .inner article {
   display: none;
+  transform: translateY(100px);
 }
 .community .inner article.on {
   display: block;
