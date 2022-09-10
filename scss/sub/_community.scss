@@ -111,6 +111,7 @@
     article {
       display: none;
       transition: 1s;
+      transform: translateY(100px);
 
       &.on {
         display: block;

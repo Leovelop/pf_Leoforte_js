@@ -2837,6 +2837,7 @@ label {
 .community .inner article {
   display: none;
   transition: 1s;
+  transform: translateY(100px);
 }
 .community .inner article.on {
   display: block;
