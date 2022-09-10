@@ -108,183 +108,185 @@
       }
     }
 
-    article {
-      display: none;
-      transition: 1s;
-      opacity: 0;
-      transform: translateY(100px);
-
-      &.on {
-        display: block;
-      opacity: 1;
-      transform: translateY(0px);
-      }
-
-      table {
-        width: 100%;
-        border-top: 3px solid $subColor1;
-        border-bottom: 3px solid $subColor1;
-        margin-bottom: 50px;
-
-        tr {
-          transition: 0.5s;
-
-          &:hover {
-            background: lightcyan;
-          }
-
-          th {
-            padding: 20px 15px;
-            background: $themeColor;
-            color: #fff;
-            font: bold 14px/1.4 $fontKr;
-
-            &:nth-of-type(1) {
-              width: 10%;
-            }
-
-            &:nth-of-type(3) {
-              width: 15%;
-            }
-
-            &:nth-of-type(4) {
-              width: 15%;
-            }
-
-          }
-
-          td {
-            padding: 20px 15px;
-            border-bottom: 1px solid #eee;
-            text-align: center;
-            font: 14px/1.4 $fontKr;
-
-            &:nth-of-type(2) {
-              text-align: left;
-            }
-
-            a {
-              color: #333;
-              font: 14px/1.4 $fontKr;
-            }
-          }
+    .wrap {
+      article {
+        display: none;
+        transition: 1s;
+        opacity: 0;
+        transform: translateY(100px);
+  
+        &.on {
+          display: block;
+        opacity: 1;
+        transform: translateY(0px);
         }
-      }
-
-      .faq {
-        width: 100%;
-        margin-bottom: 50px;
-        border-top: 3px solid $subColor1;
-        border-bottom: 3px solid $subColor1;
-
-        dt {
+  
+        table {
           width: 100%;
-          padding: 25px 60px;
-          border-bottom: 1px solid #ddd;
-          transition: 0.4s;
-          cursor: pointer;
-          position: relative;
-          font: 15px/1.3 $fontKr;
-          color: $defColor;
-
-          &.on {
-            background: $defColor;
-            color: $subColor2;
-
-            span {
-              &:nth-of-type(1) {
-                background: $themeColor;
-              }
-
-              &:nth-of-type(2) {
-                transform: rotate(180deg);
-                color: $pointColor;
-              }
-            }
-          }
-
-          &:hover {
-            background: $defColor;
-            color: $subColor2;
-
-            span {
-              &:nth-of-type(1) {
-                background: $themeColor;
-              }
-
-              &:nth-of-type(2) {
-                color: $pointColor;
-              }
-            }
-          }
-
-          span {
-            position: absolute;
-            left: 15px;
-            font: bold 15px/28px $fontDef;
-            width: 25px;
-            heighT: 25px;
-            text-align: center;
-            top: 50%;
-            margin-top: - calc(25px / 2);
-            color: #fff;
-            background: $defColor;
-            transition: color 0.2s, transform 0.5s, background 0.4s;
-            border-radius: 50%;
-
-            &:nth-of-type(2) {
-              left: auto;
-              right: 20px;
-              background: none;
-              color: $defColor;
-
-              i {
-                font-size: 25px;
-              }
-            }
-          }
-        }
-
-        dd {
-          width: 100%;
-          padding: 25px 60px;
-          position: relative;
-          background: #eee;
-          color: $defColor;
-          transition: 1s;
-          height: 0%;
-          display: none;
-
-          ul li {
-            font: 15px/1.3 $fontKr;
-          }
-
-          &.on {
-            display: block;
-          }
-
-          span {
-            position: absolute;
-            left: 15px;
-            font: bold 15px/22px $fontKr;
-            width: 25px;
-            heighT: 25px;
-            text-align: center;
-            top: 50%;
-            margin-top: - calc(25px / 2);
-            color: #fff;
-            background: $pointColor;
+          border-top: 3px solid $subColor1;
+          border-bottom: 3px solid $subColor1;
+          margin-bottom: 50px;
+  
+          tr {
             transition: 0.5s;
-            border-radius: 50%;
-
-            &:nth-of-type(2) {
-              left: auto;
-              right: 20px;
-              background: none;
-              color: $defColor;
-
-              i {
-                font-size: 25px;
+  
+            &:hover {
+              background: lightcyan;
+            }
+  
+            th {
+              padding: 20px 15px;
+              background: $themeColor;
+              color: #fff;
+              font: bold 14px/1.4 $fontKr;
+  
+              &:nth-of-type(1) {
+                width: 10%;
+              }
+  
+              &:nth-of-type(3) {
+                width: 15%;
+              }
+  
+              &:nth-of-type(4) {
+                width: 15%;
+              }
+  
+            }
+  
+            td {
+              padding: 20px 15px;
+              border-bottom: 1px solid #eee;
+              text-align: center;
+              font: 14px/1.4 $fontKr;
+  
+              &:nth-of-type(2) {
+                text-align: left;
+              }
+  
+              a {
+                color: #333;
+                font: 14px/1.4 $fontKr;
+              }
+            }
+          }
+        }
+  
+        .faq {
+          width: 100%;
+          margin-bottom: 50px;
+          border-top: 3px solid $subColor1;
+          border-bottom: 3px solid $subColor1;
+  
+          dt {
+            width: 100%;
+            padding: 25px 60px;
+            border-bottom: 1px solid #ddd;
+            transition: 0.4s;
+            cursor: pointer;
+            position: relative;
+            font: 15px/1.3 $fontKr;
+            color: $defColor;
+  
+            &.on {
+              background: $defColor;
+              color: $subColor2;
+  
+              span {
+                &:nth-of-type(1) {
+                  background: $themeColor;
+                }
+  
+                &:nth-of-type(2) {
+                  transform: rotate(180deg);
+                  color: $pointColor;
+                }
+              }
+            }
+  
+            &:hover {
+              background: $defColor;
+              color: $subColor2;
+  
+              span {
+                &:nth-of-type(1) {
+                  background: $themeColor;
+                }
+  
+                &:nth-of-type(2) {
+                  color: $pointColor;
+                }
+              }
+            }
+  
+            span {
+              position: absolute;
+              left: 15px;
+              font: bold 15px/28px $fontDef;
+              width: 25px;
+              heighT: 25px;
+              text-align: center;
+              top: 50%;
+              margin-top: - calc(25px / 2);
+              color: #fff;
+              background: $defColor;
+              transition: color 0.2s, transform 0.5s, background 0.4s;
+              border-radius: 50%;
+  
+              &:nth-of-type(2) {
+                left: auto;
+                right: 20px;
+                background: none;
+                color: $defColor;
+  
+                i {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+  
+          dd {
+            width: 100%;
+            padding: 25px 60px;
+            position: relative;
+            background: #eee;
+            color: $defColor;
+            transition: 1s;
+            height: 0%;
+            display: none;
+  
+            ul li {
+              font: 15px/1.3 $fontKr;
+            }
+  
+            &.on {
+              display: block;
+            }
+  
+            span {
+              position: absolute;
+              left: 15px;
+              font: bold 15px/22px $fontKr;
+              width: 25px;
+              heighT: 25px;
+              text-align: center;
+              top: 50%;
+              margin-top: - calc(25px / 2);
+              color: #fff;
+              background: $pointColor;
+              transition: 0.5s;
+              border-radius: 50%;
+  
+              &:nth-of-type(2) {
+                left: auto;
+                right: 20px;
+                background: none;
+                color: $defColor;
+  
+                i {
+                  font-size: 25px;
+                }
               }
             }
           }
