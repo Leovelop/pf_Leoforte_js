@@ -2834,6 +2834,9 @@ label {
   margin-left: 5px;
   vertical-align: top;
 }
+.community .inner .wrap {
+  position: relative;
+}
 .community .inner .wrap article {
   display: none;
   transition: 1s;

@@ -109,6 +109,8 @@
     }
 
     .wrap {
+      position: relative;
+      
       article {
         display: none;
         transition: 1s;
