@@ -111,11 +111,13 @@
     article {
       display: none;
       transition: 1s;
+      opacity: 0;
       transform: translateY(100px);
 
       &.on {
         display: block;
-        transform: translateY(0px);
+      opacity: 1;
+      transform: translateY(0px);
       }
 
       table {

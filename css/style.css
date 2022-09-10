@@ -2837,10 +2837,12 @@ label {
 .community .inner article {
   display: none;
   transition: 1s;
+  opacity: 0;
   transform: translateY(100px);
 }
 .community .inner article.on {
   display: block;
+  opacity: 1;
   transform: translateY(0px);
 }
 .community .inner article table {
