@@ -2834,67 +2834,59 @@ label {
   margin-left: 5px;
   vertical-align: top;
 }
-.community .inner .wrap {
-  position: relative;
-}
-.community .inner .wrap article {
+.community .inner article {
   display: none;
-  transition: 1s;
-  opacity: 0;
-  transform: translateY(100px);
 }
-.community .inner .wrap article.on {
+.community .inner article.on {
   display: block;
-  opacity: 1;
-  transform: translateY(0px);
 }
-.community .inner .wrap article table {
+.community .inner article table {
   width: 100%;
   border-top: 3px solid #03A6A6;
   border-bottom: 3px solid #03A6A6;
   margin-bottom: 50px;
 }
-.community .inner .wrap article table tr {
+.community .inner article table tr {
   transition: 0.5s;
 }
-.community .inner .wrap article table tr:hover {
+.community .inner article table tr:hover {
   background: lightcyan;
 }
-.community .inner .wrap article table tr th {
+.community .inner article table tr th {
   padding: 20px 15px;
   background: #08D9D6;
   color: #fff;
   font: bold 14px/1.4 "Noto Sans KR";
 }
-.community .inner .wrap article table tr th:nth-of-type(1) {
+.community .inner article table tr th:nth-of-type(1) {
   width: 10%;
 }
-.community .inner .wrap article table tr th:nth-of-type(3) {
+.community .inner article table tr th:nth-of-type(3) {
   width: 15%;
 }
-.community .inner .wrap article table tr th:nth-of-type(4) {
+.community .inner article table tr th:nth-of-type(4) {
   width: 15%;
 }
-.community .inner .wrap article table tr td {
+.community .inner article table tr td {
   padding: 20px 15px;
   border-bottom: 1px solid #eee;
   text-align: center;
   font: 14px/1.4 "Noto Sans KR";
 }
-.community .inner .wrap article table tr td:nth-of-type(2) {
+.community .inner article table tr td:nth-of-type(2) {
   text-align: left;
 }
-.community .inner .wrap article table tr td a {
+.community .inner article table tr td a {
   color: #333;
   font: 14px/1.4 "Noto Sans KR";
 }
-.community .inner .wrap article .faq {
+.community .inner article .faq {
   width: 100%;
   margin-bottom: 50px;
   border-top: 3px solid #03A6A6;
   border-bottom: 3px solid #03A6A6;
 }
-.community .inner .wrap article .faq dt {
+.community .inner article .faq dt {
   width: 100%;
   padding: 25px 60px;
   border-bottom: 1px solid #ddd;
@@ -2904,28 +2896,28 @@ label {
   font: 15px/1.3 "Noto Sans KR";
   color: #252A34;
 }
-.community .inner .wrap article .faq dt.on {
+.community .inner article .faq dt.on {
   background: #252A34;
   color: #efffff;
 }
-.community .inner .wrap article .faq dt.on span:nth-of-type(1) {
+.community .inner article .faq dt.on span:nth-of-type(1) {
   background: #08D9D6;
 }
-.community .inner .wrap article .faq dt.on span:nth-of-type(2) {
+.community .inner article .faq dt.on span:nth-of-type(2) {
   transform: rotate(180deg);
   color: #FF2E63;
 }
-.community .inner .wrap article .faq dt:hover {
+.community .inner article .faq dt:hover {
   background: #252A34;
   color: #efffff;
 }
-.community .inner .wrap article .faq dt:hover span:nth-of-type(1) {
+.community .inner article .faq dt:hover span:nth-of-type(1) {
   background: #08D9D6;
 }
-.community .inner .wrap article .faq dt:hover span:nth-of-type(2) {
+.community .inner article .faq dt:hover span:nth-of-type(2) {
   color: #FF2E63;
 }
-.community .inner .wrap article .faq dt span {
+.community .inner article .faq dt span {
   position: absolute;
   left: 15px;
   font: bold 15px/28px "Josefin Sans", "Noto Sans KR";
@@ -2939,16 +2931,16 @@ label {
   transition: color 0.2s, transform 0.5s, background 0.4s;
   border-radius: 50%;
 }
-.community .inner .wrap article .faq dt span:nth-of-type(2) {
+.community .inner article .faq dt span:nth-of-type(2) {
   left: auto;
   right: 20px;
   background: none;
   color: #252A34;
 }
-.community .inner .wrap article .faq dt span:nth-of-type(2) i {
+.community .inner article .faq dt span:nth-of-type(2) i {
   font-size: 25px;
 }
-.community .inner .wrap article .faq dd {
+.community .inner article .faq dd {
   width: 100%;
   padding: 25px 60px;
   position: relative;
@@ -2958,13 +2950,13 @@ label {
   height: 0%;
   display: none;
 }
-.community .inner .wrap article .faq dd ul li {
+.community .inner article .faq dd ul li {
   font: 15px/1.3 "Noto Sans KR";
 }
-.community .inner .wrap article .faq dd.on {
+.community .inner article .faq dd.on {
   display: block;
 }
-.community .inner .wrap article .faq dd span {
+.community .inner article .faq dd span {
   position: absolute;
   left: 15px;
   font: bold 15px/22px "Noto Sans KR";
@@ -2978,13 +2970,13 @@ label {
   transition: 0.5s;
   border-radius: 50%;
 }
-.community .inner .wrap article .faq dd span:nth-of-type(2) {
+.community .inner article .faq dd span:nth-of-type(2) {
   left: auto;
   right: 20px;
   background: none;
   color: #252A34;
 }
-.community .inner .wrap article .faq dd span:nth-of-type(2) i {
+.community .inner article .faq dd span:nth-of-type(2) i {
   font-size: 25px;
 }
 .community .inner .pagenation {
