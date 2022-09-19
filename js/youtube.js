@@ -40,7 +40,7 @@ fetch(url)
                 <article>
                     <h2 class="vidTitle">${item.snippet.videoOwnerChannelTitle}</h2>
                     <a href="${item.snippet.resourceId.videoId}" class="pic">
-                        <img src="${item.snippet.thumbnails.maxres.url}" alt="${item.snippet.videoOwnerChannelTitle}'s video">
+                        <img src="${item.snippet.thumbnails.standard .url}" alt="${item.snippet.videoOwnerChannelTitle}'s video">
                     </a>
                     <div class="con">
                         <span>${date}</span>
