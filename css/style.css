@@ -3506,36 +3506,40 @@ label {
 }
 /* mobile -------------------- */
 @media screen and (max-width: 539px) {
-  .join .inner table th {
+  .join .inner article table th {
     display: none;
   }
-  .join .inner table th:last-child {
+  .join .inner article table th:last-child {
     display: block;
     width: 100%;
   }
-  .join .inner table th input[type=submit],
-.join .inner table th input[type=reset],
-.join .inner table th select {
+  .join .inner article table th input[type=submit],
+.join .inner article table th input[type=reset],
+.join .inner article table th select {
     width: 40%;
     margin: 0 5%;
   }
-  .join .inner table td input[type=text],
-.join .inner table td input[type=password] {
+  .join .inner article table td {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .join .inner article table td input[type=text],
+.join .inner article table td input[type=password] {
     width: 100%;
   }
-  .join .inner table td select#company {
+  .join .inner article table td select#company {
     width: 100%;
     margin-top: 10px;
   }
-  .join .inner table td label {
+  .join .inner article table td label {
     display: block;
     margin-right: 0px;
   }
-  .join .inner table td textarea {
-    width: 90%;
+  .join .inner article table td textarea {
+    width: 100%;
   }
-  .join .inner table td .hobbyTxt,
-.join .inner table td .genderTxt {
+  .join .inner article table td .hobbyTxt,
+.join .inner article table td .genderTxt {
     display: block;
   }
 }

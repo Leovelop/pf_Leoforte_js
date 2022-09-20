@@ -272,50 +272,54 @@
   .join {
     .inner {
 
-      table {
+      article {
+        table {
 
-        th {
-          display: none;
-
-          &:last-child {
-            display: block;
+          th {
+            display: none;
+  
+            &:last-child {
+              display: block;
+              width: 100%;
+            }
+  
+            //인라인태그 버그, 부모태그에 font-size: 0
+            input[type=submit],
+            input[type=reset],
+            select {
+              width: 40%;
+              margin: 0 5%;
+            }
+          }
+  
+          td {
             width: 100%;
-          }
-
-          //인라인태그 버그, 부모태그에 font-size: 0
-          input[type=submit],
-          input[type=reset],
-          select {
-            width: 40%;
-            margin: 0 5%;
-          }
-        }
-
-        td {
-
-          input[type=text],
-          input[type=password] {
-            width: 100%;
-          }
-
-          select#company {
-            width: 100%;
-            margin-top: 10px;
-          }
-
-          label {
-            display: block;
-            margin-right: 0px;
-          }
-
-          textarea {
-            width: 90%;
-          }
-
-
-          .hobbyTxt,
-          .genderTxt {
-            display: block;
+            padding-right: 0px;
+  
+            input[type=text],
+            input[type=password] {
+              width: 100%;
+            }
+  
+            select#company {
+              width: 100%;
+              margin-top: 10px;
+            }
+  
+            label {
+              display: block;
+              margin-right: 0px;
+            }
+  
+            textarea {
+              width: 100%;
+            }
+  
+  
+            .hobbyTxt,
+            .genderTxt {
+              display: block;
+            }
           }
         }
       }
