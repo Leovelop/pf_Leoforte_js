@@ -3517,7 +3517,7 @@ label {
 .join .inner article table th input[type=reset],
 .join .inner article table th select {
     width: 40%;
-    margin: 0 5%;
+    margin: 0 0%;
   }
   .join .inner article table td {
     width: 100%;
