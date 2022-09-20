@@ -3295,7 +3295,7 @@ label {
     top: 30vw;
   }
 }
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 539px) {
   #gallery #wrap #list li {
     width: 100%;
   }
