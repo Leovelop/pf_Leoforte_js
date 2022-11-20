@@ -15,6 +15,7 @@ const url = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format
 callData(url);
 
 btnSearch.addEventListener("click", e => {
+  e.preventDefault();
 
   let tag = input.value;
   tag = tag.trim();
