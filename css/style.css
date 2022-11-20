@@ -3190,7 +3190,8 @@ label {
   font: 12px/1.2 "arial";
   color: #777;
   margin-bottom: 30px;
-  transform: translateY(-100%);
+  width: 100%;
+  padding: 0px 20px;
 }
 #gallery #wrap #list li > div span {
   display: block;
@@ -3200,7 +3201,6 @@ label {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-right: 5px;
   padding: 4px;
   background: #fff;
 }
