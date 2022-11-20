@@ -3187,7 +3187,7 @@ label {
   transition: 0.5s;
 }
 #gallery #wrap #list li > div p {
-  font: 12px/1.2 "arial";
+  font: 11px/1.2 "arial";
   color: #777;
   margin-bottom: 30px;
   width: 100%;
@@ -3206,7 +3206,7 @@ label {
 }
 #gallery #wrap #list li > div span strong {
   display: block;
-  font: 11px/1 "arial";
+  font: 13px/1 "arial";
   color: #252A34;
 }
 #gallery #wrap #list li > div:hover a > img {
