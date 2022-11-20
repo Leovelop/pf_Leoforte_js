@@ -112,8 +112,11 @@ function callData(url) {
       return data.json();
     })
     .then(json => {
+      //let text = json;
+      //console.log(text)
       let items = json.photos.photo;
       //console.log(items)
+
       if (items.length > 0) {
         const errMsgs = frame.parentElement.querySelectorAll("p");
         if (errMsgs.length > 0) frame.parentElement.querySelector("p").remove();
@@ -142,7 +145,7 @@ function createList(items) {
   let htmls = "";
 
   items.map(data => {
-    console.log(data);
+    //console.log(data);
     let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg`;
 
     let imgSrcBig = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
