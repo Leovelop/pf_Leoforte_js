@@ -105,7 +105,7 @@
           }
 
           p {
-            font: 11px/1.2 'arial';
+            font: 11px/1.2 $fontKr;
             color: #777;
             margin-bottom: 30px;
             width: 100%;
@@ -126,7 +126,7 @@
 
             strong {
               display: block;
-              font: 13px/1 'arial';
+              font: 13px/1 $fontKr;
               color: $defColor;
             }
           }
