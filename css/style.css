@@ -3185,6 +3185,7 @@ label {
 #gallery #wrap #list li > div a > img {
   width: 100%;
   transition: 0.5s;
+  vertical-align: middle;
 }
 #gallery #wrap #list li > div p {
   font: 11px/1.2 "Noto Sans KR";
