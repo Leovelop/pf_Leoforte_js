@@ -46,6 +46,7 @@ function servicesOn(index) {
 
   let clickA = btns[index].querySelector("a");
   let imgSrc = clickA.getAttribute("href");
+  let imgTit = clickA.getAttribute("title");
 
   img.setAttribute("src", imgSrc);
 
