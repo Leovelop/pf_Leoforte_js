@@ -32,6 +32,10 @@
           float: left;
           position: relative;
 
+          &.sns a {
+            padding: 14px 15px;
+          }
+
           a {
             display: inline-block;
             font: bold 14px/1 $fontDef;
@@ -60,21 +64,6 @@
           }
 
 
-        }
-
-        .sns {
-          float: right;
-
-          li {
-            a {
-              padding: 14px 20px;
-              font-size: 0;
-
-              i {
-                font-size: 14px;
-              }
-            }
-          }
         }
       }
 

@@ -1743,6 +1743,9 @@ label {
   float: left;
   position: relative;
 }
+#header_sub .inner .menuWeb #gnb li.sns a {
+  padding: 14px 15px;
+}
 #header_sub .inner .menuWeb #gnb li a {
   display: inline-block;
   font: bold 14px/1 "Josefin Sans", "Noto Sans KR";
@@ -1764,16 +1767,6 @@ label {
 }
 #header_sub .inner .menuWeb #gnb li a:hover::after {
   width: 100%;
-}
-#header_sub .inner .menuWeb #gnb .sns {
-  float: right;
-}
-#header_sub .inner .menuWeb #gnb .sns li a {
-  padding: 14px 20px;
-  font-size: 0;
-}
-#header_sub .inner .menuWeb #gnb .sns li a i {
-  font-size: 14px;
 }
 #header_sub .inner .btnCall {
   position: absolute;
