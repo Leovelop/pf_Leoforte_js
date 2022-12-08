@@ -49,6 +49,7 @@ function servicesOn(index) {
   let imgTit = clickA.getAttribute("title");
 
   img.setAttribute("src", imgSrc);
+  img.setAttribute("alt", imgTit);
 
   for (let el of btns) {
     el.classList.remove("on");
