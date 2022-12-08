@@ -226,6 +226,9 @@ label {
 #header .inner .menuWeb #gnb > li {
   float: left;
 }
+#header .inner .menuWeb #gnb > li.sns a {
+  padding: 14px 15px;
+}
 #header .inner .menuWeb #gnb > li > a {
   display: inline-block;
   position: relative;
@@ -249,70 +252,7 @@ label {
 #header .inner .menuWeb #gnb > li > a:hover::after {
   width: 100%;
 }
-#header .inner .menuWeb #gnb > li .menuSub {
-  width: 1180px;
-  height: 200px;
-  background: #252A34;
-  position: absolute;
-  top: 48px;
-  right: 0px;
-  transition: 0.5s;
-}
-#header .inner .menuWeb #gnb > li .menuSub > ul li a {
-  color: #efffff;
-  display: block;
-  width: 200px;
-  height: 40px;
-  position: relative;
-}
-#header .inner .menuWeb #gnb > li .menuSub > ul li a:hover {
-  background: #08D9D6;
-}
-#header .inner .menuWeb #gnb > li .menuSub::before {
-  content: "";
-  display: block;
-  width: 2800px;
-  height: 200px;
-  position: absolute;
-  background: #252A34;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#header .inner .menuWeb #gnb .sns {
-  float: right;
-}
-#header .inner .menuWeb #gnb .sns > li {
-  float: left;
-  position: relative;
-}
-#header .inner .menuWeb #gnb .sns > li > a {
-  display: inline-block;
-  padding: 14px 20px;
-  font-size: 0;
-  padding: 14px 20px;
-  transition: 0.5s;
-  color: #ddd;
-}
-#header .inner .menuWeb #gnb .sns > li > a i {
-  font-size: 14px;
-}
-#header .inner .menuWeb #gnb .sns > li > a::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 5px;
-  background: #08D9D6;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: 0.5s;
-}
-#header .inner .menuWeb #gnb .sns > li > a:hover::after {
-  width: 100%;
-}
-#header .inner .btnCall {
+#header .btnCall {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -321,7 +261,7 @@ label {
   height: 20px;
   display: none;
 }
-#header .inner .btnCall::before, #header .inner .btnCall::after {
+#header .btnCall::before, #header .btnCall::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -329,15 +269,15 @@ label {
   background: #fff;
   left: 0;
 }
-#header .inner .btnCall::before {
+#header .btnCall::before {
   top: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall::after {
+#header .btnCall::after {
   bottom: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall span {
+#header .btnCall span {
   width: 100%;
   height: 2px;
   background: #fff;
@@ -346,19 +286,19 @@ label {
   text-indent: -9999px;
   transition: 0.5s 0.2s;
 }
-#header .inner .btnCall.on::before {
+#header .btnCall.on::before {
   top: calc(50% - 1px);
   transform: rotate(45deg);
 }
-#header .inner .btnCall.on::after {
+#header .btnCall.on::after {
   bottom: calc(50% - 1px);
   transform: rotate(-45deg);
 }
-#header .inner .btnCall.on span {
+#header .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-#header .inner .menuMo {
+#header .menuMo {
   width: 270px;
   height: 100vh;
   padding: 35px 30px;
@@ -369,24 +309,24 @@ label {
   z-index: 10;
   transition: 0.5s;
 }
-#header .inner .menuMo h1 {
+#header .menuMo h1 {
   border-bottom: 1px solid #FF2E63;
 }
-#header .inner .menuMo h1 a {
+#header .menuMo h1 a {
   display: block;
   font: bold 24px/1 "Source Sans Pro", "Noto Sans KR";
   color: #fff;
   text-align: center;
   margin-bottom: 5px;
 }
-#header .inner .menuMo h1 span {
+#header .menuMo h1 span {
   display: block;
   text-align: center;
   font: 11px/1 "Josefin Sans", "Noto Sans KR";
   color: #ccc;
   margin-bottom: 30px;
 }
-#header .inner .menuMo #gnbMo li a {
+#header .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0px;
@@ -395,11 +335,11 @@ label {
   color: #aaa;
   transition: 0.5s;
 }
-#header .inner .menuMo #gnbMo li a:hover {
+#header .menuMo #gnbMo li a:hover {
   background: #08D9D6;
   color: #fff;
 }
-#header .inner .menuMo.on {
+#header .menuMo.on {
   left: 0;
 }
 
